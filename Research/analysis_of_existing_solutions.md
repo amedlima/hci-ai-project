@@ -303,17 +303,17 @@ The following matrix compares the 11 platforms against the core requirements of 
 
 | Platform | Document summarisation | Claim-level breakdown | Inline source traceability | Contradiction / year-over-year diff | Uncertainty indicator | Human accept/reject controls | Accountable sign-off & audit log |
 |---|---|---|---|---|---|---|---|
-| Factiverse | Partial | Yes | Yes | Yes (disputed claims) | Yes | Partial | No |
-| Full Fact AI | Partial | Yes | Yes | Yes | Partial (harm score) | Yes | Partial |
-| Scite | Yes | Yes | Yes | Yes (contrasting citations) | No | No | No |
+| Factiverse | Partial | Yes | Yes | Yes | Yes | Partial | No |
+| Full Fact AI | Partial | Yes | Yes | Yes | Partial | Yes | Partial |
+| Scite | Yes | Yes | Yes | Yes | No | No | No |
 | Adobe Acrobat AI | Yes | No | Yes | No | No | No | No |
-| Gemini Notebook | Yes | No | Yes | Partial (multi-source) | No | No | No |
+| Gemini Notebook | Yes | No | Yes | Partial | No | No | No |
 | Hebbia | Yes | Yes | Yes | Partial | No | Partial | Partial |
-| Litera Kira | Yes | Yes | Yes | Yes (clause diff) | No | Yes | Partial |
+| Litera Kira | Yes | Yes | Yes | Yes | No | Yes | Partial |
 | Anara | Yes | No | Yes | No | No | No | No |
 | Elicit | Yes | Yes | Yes | Partial | No | Yes | No |
-| Spektr | Partial | Yes (fields) | Yes | Yes (discrepancies) | Yes (escalation) | Yes | Yes |
-| ABBYY FineReader | No | No | No | Yes (version diff) | No | Partial (annotations) | No |
+| Spektr | Partial | Yes | Yes | Yes | Yes | Yes | Yes |
+| ABBYY FineReader | No | No | No | Yes | No | Partial | No |
 
 > [!NOTE]
 > As shown in the matrix, existing mainstream AI document tools (such as Adobe Acrobat AI and Gemini Notebook) provide source links but lack contradiction flags, explicit uncertainty notes, claim-level accept/reject controls and an accountable sign-off audit log. Bridging this gap is the core contribution of this project.
@@ -337,12 +337,16 @@ Based on the analysis of existing solutions, the following interface capabilitie
 
 AI tools were used as supporting tools throughout the preparation of this analysis of existing solutions for the following purposes:
 
+- Ensuring generated text is easy to follow, understand and clear and explains the analysis of existing solutions clearly.
 - Identifying relevant commercial products and applications across fact-checking, document intelligence and compliance domains.
 - Suggesting relevant research terms and discovery directions.
 - Reviewing product documentation and identifying relevant functionalities.
 - Organising product information into advantages, limitations and project relevance.
 - Comparing the capabilities of different platforms against the project's requirements.
-- Structuring and formatting the `analysis-of-existing-solutions.md` file.
+- Filtering out redundant or less relevant software tools to keep the comparison focused on the project's goals.
+- Summarising product capabilities into a simplified, easy-to-read comparative feature matrix.
+- Mapping features from existing commercial solutions to the experimental prototype conditions (Conditions B and C).
+- Structuring and formatting the `analysis_of_existing_solutions.md` file.
 
 > [!NOTE]
 > AI assisted in the research and analysis. Product capabilities were evaluated using public documentation rather than direct commercial testing.
