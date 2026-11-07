@@ -81,7 +81,9 @@ Using data from published user studies ($N = 1,240$ participants in total) gives
 
 AI tools were used as supporting tools throughout the preparation of this secondary user research analysis for the following purposes:
 
+- Ensuring generated text is easy to follow, understand and clear and communicates the secondary user research and the reasons for it clearly.
 - Identifying participant numbers and user behaviour findings from the reviewed research papers.
 - Organising user pain points around the project's target users and scenarios.
 - Connecting the user study findings to our testable requirements and design guidelines.
-- Structuring and formatting the `secondary-user-research-analysis.md` file.
+- Summarising the methodologies, participant counts and measured outcomes of the reviewed studies into an overview table.
+- Structuring and formatting the `secondary_user_research_analysis.md` file.
