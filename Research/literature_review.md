@@ -124,8 +124,11 @@ To ensure the prototype in this project follows established interface design rul
 
 ### 3.1 Nielsen's 10 Usability Heuristics for User Interface Design
 
-**Authors / Source:** Nielsen (1994), Nielsen Norman Group  
-**Focus:** Fundamental heuristics for evaluating and designing user-friendly interactive interfaces.
+**Authors:** Nielsen (1994)  
+**DOI:** [10.1145/191666.191729](https://doi.org/10.1145/191666.191729)
+
+**Brief description:**  
+Introduces and validates fundamental usability heuristics for evaluating and designing interactive user interfaces, focusing on system status visibility, user control, error prevention and reducing memory load.
 
 **Relevance to the project:**
 - **Visibility of system status:** Justifies showing clear verification badges (Supported, Discrepancy, Uncertain) and a live progress counter of how many claims have been checked.
@@ -135,8 +138,11 @@ To ensure the prototype in this project follows established interface design rul
 
 ### 3.2 Web Content Accessibility Guidelines (WCAG 2.1)
 
-**Authors / Source:** World Wide Web Consortium (W3C)  
-**Focus:** Practical web interface accessibility rules for visual readability and colour-independent indicators.
+**Authors:** World Wide Web Consortium (W3C) (2018)  
+**Standard URL:** [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/) *(Last Accessed: 7 November 2026)*
+
+**Brief description:**  
+Establishes the official W3C technical standard for web accessibility, defining testable success criteria to make interactive web content perceivable, operable, understandable and robust for all users.
 
 **Relevance to the project:**
 - **Use of Colour (Criterion 1.4.1):** Ensures that claim statuses (Supported, Discrepancy, Uncertain) never rely on colour alone (such as green, red or amber), but always include distinct icons and text labels.
@@ -145,8 +151,12 @@ To ensure the prototype in this project follows established interface design rul
 
 ### 3.3 Standardised HCI Evaluation Benchmarks (SUS and NASA-TLX)
 
-**Authors / Source:** Brooke (1996) – System Usability Scale (SUS); Hart and Staveland (1988) – NASA Task Load Index (NASA-TLX)  
-**Focus:** Standardised questionnaires for measuring perceived usability and cognitive workload in HCI studies.
+**Authors:** Brooke (1996); Hart and Staveland (1988)  
+**DOI (SUS):** [10.1201/9781498710411-35](https://doi.org/10.1201/9781498710411-35)  
+**DOI (NASA-TLX):** [10.1016/S0166-4115(08)62386-9](https://doi.org/10.1016/S0166-4115(08)62386-9)
+
+**Brief description:**  
+Introduces two foundational HCI evaluation questionnaires: the System Usability Scale (SUS) for measuring perceived interface usability across a 10-item scale, and the NASA Task Load Index (NASA-TLX) for measuring subjective cognitive workload across mental demand, effort and frustration.
 
 **Relevance to the project:**
 - **System Usability Scale (SUS):** Provides a standard 10-item questionnaire scored from $0$ to $100$, establishing a clear quantitative benchmark ($68$ represents average usability) to test whether our final interface design is easy to use.
@@ -184,4 +194,4 @@ AI tools were used as supporting tools throughout the preparation of this litera
 - Obtaining general overviews and understanding the key findings of research papers.
 - Identifying information most relevant to the project's objectives and requirements.
 - Clarifying academic concepts and terminology that were difficult to understand.
-- Organising research findings and formatting the `literature-review.md` file to ensure a clear structure, logical flow and consistent presentation.
+- Organising research findings and formatting the `literature_review.md` file to ensure a clear structure, logical flow and consistent presentation.
