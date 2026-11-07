@@ -189,9 +189,12 @@ The literature and standards highlight six core implications for this project:
 
 AI tools were used as supporting tools throughout the preparation of this literature review for the following purposes:
 
+- Ensuring generated text is easy to follow, understand and clear and communicates the ideas researched.
 - Understanding project requirements and identifying relevant academic research and HCI standards.
 - Suggesting keywords and search terms for literature searches.
 - Obtaining general overviews and understanding the key findings of research papers.
 - Identifying information most relevant to the project's objectives and requirements.
 - Clarifying academic concepts and terminology that were difficult to understand.
+- Filtering out off-topic papers to keep the literature review focused strictly on human-AI interaction and summary verification.
+- Synthesising common research themes across the academic papers and HCI standards into a structured comparison table.
 - Organising research findings and formatting the `literature_review.md` file to ensure a clear structure, logical flow and consistent presentation.
