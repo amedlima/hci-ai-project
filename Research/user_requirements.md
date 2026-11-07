@@ -65,7 +65,7 @@ To keep our project scope realistic for an 8-week schedule, the requirements are
 |---|---|---|
 | **Essential (Core Prototype)** | `UR-01`, `UR-02`, `UR-03`, `UR-05`, `UR-07`, `UR-08`, `SR-01`–`SR-04` | Needed to run our user study comparing Conditions A, B and C: claim breakdown, source links, status badges, accept/reject buttons, human sign-off and automatic audit logging. |
 | **Important (Target Polish)** | `UR-04`, `UR-06`, `UR-09` | Needed to support Scenario A (flagging changes from last year), checking hints for uncertain claims and meeting our usability/workload targets. |
-| **Stretch (Optional Extra)** |Dedicated side-by-side "what changed since last time" diff view | Enhances Scenario A if time allows after the core study conditions and automatic logging are working and tested. |
+| **Stretch (Optional Extra)** | Dedicated side-by-side "what changed since last time" diff view | Enhances Scenario A if time allows after the core study conditions and automatic logging are working and tested. |
 
 ## 7. Relationship Between the Research Documents
 
@@ -82,8 +82,10 @@ The four documents in our `Research/` folder work together as follows:
 
 AI tools were used as supporting tools throughout the preparation of this document for the following purposes:
 
+- Ensuring generated text is easy to follow, understand and clear and explains the user requirements clearly.
 - Reviewing and connecting findings from the literature review, existing solutions analysis and secondary user research.
 - Turning research findings into testable user requirements with numerical acceptance criteria.
 - Defining safety, accessibility and privacy requirements appropriate for our prototype.
 - Organising and prioritising requirements around Conditions A, B and C and Scenarios A and B.
-- Structuring and formatting the `user-requirements.md` file to ensure a clear, consistent layout across all sections.
+- Cross-referencing each requirement with specific sections across the other three research files to maintain traceability.
+- Structuring and formatting the `user_requirements.md` file to ensure a clear, consistent layout across all sections.
