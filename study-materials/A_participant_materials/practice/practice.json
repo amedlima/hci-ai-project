@@ -1,0 +1,518 @@
+{
+  "set_id": "practice",
+  "label": "Practice set",
+  "client": "Lark & Lantern Bakery Ltd",
+  "synthetic": true,
+  "task_instruction": "# Task: review the AI agent's summary of Lark & Lantern Bakery Ltd\n\n*This is a practice round. It is not scored. Use it to get used to the screen and ask any questions.*\n\n## Your role\n\nYou are a credit analyst at Aldermoor Commercial Bank. Lark & Lantern Bakery Ltd is a business client of the bank. The client has asked for a loan.\n\nYou delegated the reading to an AI agent. You asked it to:\n\n1. summarise the client's documents,\n2. pick out the important information, and\n3. flag anything that differs from last year's record.\n\nThe agent has produced a draft summary. **The draft cannot be used until you have reviewed it and made a decision on it.**\n\n## The client documents\n\n- **D1**: Client Information and Loan Request Form\n- **D2**: Previous-Year Review Note\n\n## What to do\n\n1. Read the agent's summary.\n2. Check what it says against the client documents.\n3. For each statement in the summary, decide whether it is correct. Mark any statement that is wrong, misleading or leaves out something important. If you can, say what the correct information is.\n4. Make your final decision on the summary as a whole: **approve it**, **approve it with your corrections**, or **reject it**.\n\nAI agents can make mistakes. The summary may be fully correct, or it may contain errors. Work at your normal pace; tell the researcher when you have made your final decision.\n\n---\n*Synthetic document. All names, companies, figures and dates are fictional and were created for a university study.*",
+  "documents": [
+    {
+      "doc_id": "D1",
+      "title": "Client Information and Loan Request Form",
+      "file": "D1_client_information_and_loan_request.md",
+      "meta": [
+        {
+          "label": "Client",
+          "value": "Lark & Lantern Bakery Ltd"
+        },
+        {
+          "label": "Form date",
+          "value": "4 May 2026"
+        },
+        {
+          "label": "Completed by",
+          "value": "Naomi Lark, Director"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D1 §1",
+          "heading": "Business details",
+          "columns": [
+            "Field",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S1-R1",
+              "cells": [
+                "Legal name",
+                "Lark & Lantern Bakery Ltd"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R2",
+              "cells": [
+                "Company registration no.",
+                "SYN-0090214"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R3",
+              "cells": [
+                "Date of incorporation",
+                "6 June 2017"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R4",
+              "cells": [
+                "Registered address",
+                "12 Mill Lane, Sorrelgate ZZ9 3HD"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R5",
+              "cells": [
+                "Nature of business",
+                "Craft bakery and café"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R6",
+              "cells": [
+                "Number of employees",
+                "12"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R7",
+              "cells": [
+                "Owner",
+                "Naomi Lark (100% shareholder and sole director)"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S2",
+          "ref": "D1 §2",
+          "heading": "Loan request",
+          "columns": [
+            "Field",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S2-R1",
+              "cells": [
+                "Loan requested",
+                "£40,000"
+              ]
+            },
+            {
+              "element_id": "D1-S2-R2",
+              "cells": [
+                "Purpose",
+                "Replacement deck oven"
+              ]
+            },
+            {
+              "element_id": "D1-S2-R3",
+              "cells": [
+                "Requested term",
+                "4 years"
+              ]
+            }
+          ],
+          "paragraphs": [
+            {
+              "element_id": "D1-S2-P1",
+              "text": "All requests are subject to credit approval by the Bank."
+            }
+          ]
+        },
+        {
+          "section_id": "S3",
+          "ref": "D1 §3",
+          "heading": "Latest financial figures (year ended 31 March 2026)",
+          "columns": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S3-R1",
+              "cells": [
+                "Revenue",
+                "£412,000"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R2",
+              "cells": [
+                "Net profit after tax",
+                "£31,000"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R3",
+              "cells": [
+                "Cash at bank",
+                "£18,000"
+              ]
+            }
+          ],
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "doc_id": "D2",
+      "title": "Previous-Year Review Note",
+      "file": "D2_previous_year_review_note.md",
+      "meta": [
+        {
+          "label": "Client",
+          "value": "Lark & Lantern Bakery Ltd"
+        },
+        {
+          "label": "Review date",
+          "value": "12 May 2025"
+        },
+        {
+          "label": "Prepared by",
+          "value": "R. Castellan, Relationship Manager"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D2 §1",
+          "heading": "Position at last review (year ended 31 March 2025)",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D2-S1-R1",
+              "cells": [
+                "Number of employees",
+                "11"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R2",
+              "cells": [
+                "Owner",
+                "Naomi Lark (100%)"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R3",
+              "cells": [
+                "Revenue",
+                "£385,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R4",
+              "cells": [
+                "Net profit after tax",
+                "£36,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R5",
+              "cells": [
+                "Cash at bank",
+                "£22,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R6",
+              "cells": [
+                "Borrowing from the Bank",
+                "None"
+              ]
+            }
+          ],
+          "paragraphs": [
+            {
+              "element_id": "D2-S1-P1",
+              "text": "The business traded steadily and held no borrowing with the Bank."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "status": "DRAFT - not approved",
+    "paragraphs": [
+      "Lark & Lantern Bakery Ltd is a craft bakery and café based in Sorrelgate, incorporated in June 2017. It is requesting a £45,000 loan over four years to replace its deck oven.",
+      "Revenue rose 7.0% to £412,000 in the year ended 31 March 2026 (previous year: £385,000). Net profit after tax increased to £31,000 from £26,000 the previous year.",
+      "The business employs 12 staff, one more than last year, and is wholly owned by Naomi Lark. Cash at bank was £18,000 at the year end (previous year: £22,000), and the business had no borrowing with the Bank at the last review."
+    ],
+    "paragraph_claim_ids": [
+      [
+        "P-C01",
+        "P-C02"
+      ],
+      [
+        "P-C03",
+        "P-C04"
+      ],
+      [
+        "P-C05",
+        "P-C06"
+      ]
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "P-C01",
+      "order": 1,
+      "text": "Lark & Lantern Bakery Ltd is a craft bakery and café based in Sorrelgate, incorporated in June 2017.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R5",
+          "label": "Nature of business",
+          "highlight": "Craft bakery and café"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R3",
+          "label": "Date of incorporation",
+          "highlight": "6 June 2017"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Taken directly from the source document.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "P-C02",
+      "order": 2,
+      "text": "It is requesting a £45,000 loan over four years to replace its deck oven.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S2",
+          "section_ref": "D1 §2",
+          "section_heading": "Loan request",
+          "element_id": "D1-S2-R1",
+          "label": "Loan requested",
+          "highlight": "£40,000"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S2",
+          "section_ref": "D1 §2",
+          "section_heading": "Loan request",
+          "element_id": "D1-S2-R3",
+          "label": "Requested term",
+          "highlight": "4 years"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Taken directly from the source document.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "P-C03",
+      "order": 3,
+      "text": "Revenue rose 7.0% to £412,000 in the year ended 31 March 2026 (previous year: £385,000).",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Latest financial figures (year ended 31 March 2026)",
+          "element_id": "D1-S3-R1",
+          "label": "Revenue",
+          "highlight": "£412,000"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Previous-Year Review Note",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Position at last review (year ended 31 March 2025)",
+          "element_id": "D2-S1-R3",
+          "label": "Revenue",
+          "highlight": "£385,000"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Both figures found; the percentage was calculated by the agent.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "P-C04",
+      "order": 4,
+      "text": "Net profit after tax increased to £31,000 from £26,000 the previous year.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Latest financial figures (year ended 31 March 2026)",
+          "element_id": "D1-S3-R2",
+          "label": "Net profit after tax",
+          "highlight": "£31,000"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Previous-Year Review Note",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Position at last review (year ended 31 March 2025)",
+          "element_id": "D2-S1-R4",
+          "label": "Net profit after tax",
+          "highlight": "£36,000"
+        }
+      ],
+      "cue": {
+        "status": "Discrepancy",
+        "confidence": "Low",
+        "note": "Automated cross-check: the previous-year comparison in this claim could not be matched to the prior-year review record.",
+        "check_hint": "Check first"
+      }
+    },
+    {
+      "claim_id": "P-C05",
+      "order": 5,
+      "text": "The business employs 12 staff, one more than last year, and is wholly owned by Naomi Lark.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R6",
+          "label": "Number of employees",
+          "highlight": "12"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Previous-Year Review Note",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Position at last review (year ended 31 March 2025)",
+          "element_id": "D2-S1-R1",
+          "label": "Number of employees",
+          "highlight": "11"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R7",
+          "label": "Owner",
+          "highlight": "Naomi Lark (100% shareholder and sole director)"
+        }
+      ],
+      "cue": {
+        "status": "Uncertain",
+        "confidence": "Medium",
+        "note": "Staff numbers appear in more than one document; please confirm which figure is current.",
+        "check_hint": "Check"
+      }
+    },
+    {
+      "claim_id": "P-C06",
+      "order": 6,
+      "text": "Cash at bank was £18,000 at the year end (previous year: £22,000), and the business had no borrowing with the Bank at the last review.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Loan Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Latest financial figures (year ended 31 March 2026)",
+          "element_id": "D1-S3-R3",
+          "label": "Cash at bank",
+          "highlight": "£18,000"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Previous-Year Review Note",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Position at last review (year ended 31 March 2025)",
+          "element_id": "D2-S1-R5",
+          "label": "Cash at bank",
+          "highlight": "£22,000"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Previous-Year Review Note",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Position at last review (year ended 31 March 2025)",
+          "element_id": "D2-S1-R6",
+          "label": "Borrowing from the Bank",
+          "highlight": "None"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "All values found in the source documents.",
+        "check_hint": "Spot-check"
+      }
+    }
+  ],
+  "year_on_year": [
+    {
+      "item": "Number of employees",
+      "previous": "11",
+      "current": "12",
+      "changed": true,
+      "previous_source": "D2-S1-R1",
+      "current_source": "D1-S1-R6"
+    },
+    {
+      "item": "Revenue",
+      "previous": "£385,000",
+      "current": "£412,000",
+      "changed": true,
+      "previous_source": "D2-S1-R3",
+      "current_source": "D1-S3-R1"
+    },
+    {
+      "item": "Net profit after tax",
+      "previous": "£36,000",
+      "current": "£31,000",
+      "changed": true,
+      "previous_source": "D2-S1-R4",
+      "current_source": "D1-S3-R2"
+    },
+    {
+      "item": "Cash at bank",
+      "previous": "£22,000",
+      "current": "£18,000",
+      "changed": true,
+      "previous_source": "D2-S1-R5",
+      "current_source": "D1-S3-R3"
+    }
+  ]
+}

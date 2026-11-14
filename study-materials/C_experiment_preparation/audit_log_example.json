@@ -1,0 +1,147 @@
+{
+  "record_id": "AUD-EXAMPLE-0001",
+  "note": "Illustrative example only. Not real participant data.",
+  "set_id": "set1",
+  "condition": "C",
+  "reviewer_id": "P00",
+  "agent_output": {
+    "claims": 12,
+    "status_counts": {
+      "Supported": 7,
+      "Uncertain": 4,
+      "Discrepancy": 1
+    }
+  },
+  "events": [
+    {
+      "t": "00:00",
+      "event": "task_started"
+    },
+    {
+      "t": "00:21",
+      "event": "document_opened",
+      "doc_id": "D1"
+    },
+    {
+      "t": "00:48",
+      "event": "source_opened",
+      "claim_id": "S1-C02",
+      "element_id": "D1-S1-R6"
+    },
+    {
+      "t": "01:05",
+      "event": "claim_decision",
+      "claim_id": "S1-C02",
+      "decision": "edit"
+    },
+    {
+      "t": "01:40",
+      "event": "source_opened",
+      "claim_id": "S1-C05",
+      "element_id": "D3-S2-R4"
+    },
+    {
+      "t": "01:52",
+      "event": "claim_decision",
+      "claim_id": "S1-C05",
+      "decision": "reject"
+    },
+    {
+      "t": "04:10",
+      "event": "signoff_blocked",
+      "reason": "1 flagged claim decided without opening its source",
+      "claim_id": "S1-C11"
+    },
+    {
+      "t": "05:02",
+      "event": "signoff_completed",
+      "final_decision": "approve_with_corrections"
+    }
+  ],
+  "claim_decisions": [
+    {
+      "claim_id": "S1-C01",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C02",
+      "agent_status": "Uncertain",
+      "decision": "edit",
+      "source_opened": true,
+      "corrected_text": "The company employs 34 staff and is owned by its two directors, Eleanor Harlow (60%) and Marcus Finch (40%)."
+    },
+    {
+      "claim_id": "S1-C03",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C04",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": true
+    },
+    {
+      "claim_id": "S1-C05",
+      "agent_status": "Discrepancy",
+      "decision": "reject",
+      "source_opened": true
+    },
+    {
+      "claim_id": "S1-C06",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C07",
+      "agent_status": "Uncertain",
+      "decision": "approve",
+      "source_opened": true
+    },
+    {
+      "claim_id": "S1-C08",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C09",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": true
+    },
+    {
+      "claim_id": "S1-C10",
+      "agent_status": "Supported",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C11",
+      "agent_status": "Uncertain",
+      "decision": "approve",
+      "source_opened": false
+    },
+    {
+      "claim_id": "S1-C12",
+      "agent_status": "Uncertain",
+      "decision": "reject",
+      "source_opened": true
+    }
+  ],
+  "signoff": {
+    "final_decision": "approve_with_corrections",
+    "statement_confirmed": true,
+    "t": "05:02"
+  },
+  "summary_counts": {
+    "approved": 9,
+    "edited": 1,
+    "rejected": 2,
+    "sources_opened": 6
+  }
+}

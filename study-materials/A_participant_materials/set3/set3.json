@@ -1,0 +1,1514 @@
+{
+  "set_id": "set3",
+  "label": "Set 3",
+  "client": "Ashcombe Garden Centres Ltd",
+  "synthetic": true,
+  "task_instruction": "# Task: review the AI agent's summary of Ashcombe Garden Centres Ltd\n\n## Your role\n\nYou are a credit analyst at Aldermoor Commercial Bank. Ashcombe Garden Centres Ltd is a business client of the bank. The client has asked to increase its overdraft, and its file is due for its annual review.\n\nYou delegated the reading to an AI agent. You asked it to:\n\n1. summarise the client's documents,\n2. pick out the important information, and\n3. flag anything that differs from last year's record.\n\nThe agent has produced a draft summary. **The draft cannot be used until you have reviewed it and made a decision on it.**\n\n## The client documents\n\n- **D1**: Client Information and Facility Request Form\n- **D2**: Financial Statement Summary, year ended 31 March 2026\n- **D3**: Annual Credit Review Record, previous year (year ended 31 March 2025)\n- **D4**: Facility Agreement Summary and Account Conduct Statement\n\n## What to do\n\n1. Read the agent's summary.\n2. Check what it says against the client documents.\n3. For each statement in the summary, decide whether it is correct. Mark any statement that is wrong, misleading or leaves out something important. If you can, say what the correct information is.\n4. Make your final decision on the summary as a whole: **approve it**, **approve it with your corrections**, or **reject it**.\n\nAI agents can make mistakes. The summary may be fully correct, or it may contain errors. Work at your normal pace; tell the researcher when you have made your final decision.\n\n---\n*Synthetic document. All names, companies, figures and dates are fictional and were created for a university study.*",
+  "documents": [
+    {
+      "doc_id": "D1",
+      "title": "Client Information and Facility Request Form",
+      "file": "D1_client_information_and_facility_request.md",
+      "meta": [
+        {
+          "label": "Lender",
+          "value": "Aldermoor Commercial Bank"
+        },
+        {
+          "label": "Client",
+          "value": "Ashcombe Garden Centres Ltd"
+        },
+        {
+          "label": "Form date",
+          "value": "1 June 2026"
+        },
+        {
+          "label": "Completed by",
+          "value": "Helen Ashcombe, Director"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D1 §1",
+          "heading": "Business details",
+          "columns": [
+            "Field",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S1-R1",
+              "cells": [
+                "Legal name",
+                "Ashcombe Garden Centres Ltd"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R2",
+              "cells": [
+                "Company registration no.",
+                "SYN-0063309"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R3",
+              "cells": [
+                "Date of incorporation",
+                "22 May 2014"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R4",
+              "cells": [
+                "Registered address",
+                "Pennhallow Road, Marlstone ZZ2 8LN"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R5",
+              "cells": [
+                "Nature of business",
+                "Operation of two garden centres with cafés"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R6",
+              "cells": [
+                "Number of employees",
+                "58"
+              ]
+            },
+            {
+              "element_id": "D1-S1-R7",
+              "cells": [
+                "Financial year end",
+                "31 March 2026"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S2",
+          "ref": "D1 §2",
+          "heading": "Directors and shareholders",
+          "columns": [
+            "Name",
+            "Role",
+            "Shareholding",
+            "Appointed"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S2-R1",
+              "cells": [
+                "Helen Ashcombe",
+                "Managing Director",
+                "70%",
+                "22 May 2014"
+              ]
+            },
+            {
+              "element_id": "D1-S2-R2",
+              "cells": [
+                "Daniel Reyes",
+                "Commercial Director",
+                "30%",
+                "22 May 2014"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S3",
+          "ref": "D1 §3",
+          "heading": "Facility request",
+          "columns": [
+            "Field",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S3-R1",
+              "cells": [
+                "Existing facility",
+                "Overdraft, limit £120,000"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R2",
+              "cells": [
+                "Requested facility",
+                "Overdraft, limit £180,000"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R3",
+              "cells": [
+                "Increase requested",
+                "£60,000 (50.0%)"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R4",
+              "cells": [
+                "Purpose",
+                "Seasonal stock purchases ahead of the autumn and Christmas trading period"
+              ]
+            },
+            {
+              "element_id": "D1-S3-R5",
+              "cells": [
+                "Requested term",
+                "12 months, then annual review"
+              ]
+            }
+          ],
+          "paragraphs": [
+            {
+              "element_id": "D1-S3-P1",
+              "text": "All requests are subject to credit approval by the Bank. No change to the facility takes effect until the Bank confirms approval in writing."
+            }
+          ]
+        },
+        {
+          "section_id": "S4",
+          "ref": "D1 §4",
+          "heading": "Client declarations",
+          "columns": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            {
+              "element_id": "D1-S4-R1",
+              "cells": [
+                "Tax arrears or payment arrangements with HMRC?",
+                "None"
+              ]
+            },
+            {
+              "element_id": "D1-S4-R2",
+              "cells": [
+                "Legal actions or court claims?",
+                "Yes. A county court claim for £41,500 was issued against the company on 14 April 2026 by a former supplier, Fernbrook Nurseries. The claim is being defended; no hearing date has been set."
+              ]
+            },
+            {
+              "element_id": "D1-S4-R3",
+              "cells": [
+                "Changes to directors or shareholders since the last review?",
+                "None"
+              ]
+            },
+            {
+              "element_id": "D1-S4-R4",
+              "cells": [
+                "Borrowing from other lenders?",
+                "None"
+              ]
+            }
+          ],
+          "paragraphs": [
+            {
+              "element_id": "D1-S4-P1",
+              "text": "I confirm that the information given in this form is complete and correct. Signed: Helen Ashcombe, 1 June 2026."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "doc_id": "D2",
+      "title": "Financial Statement Summary, year ended 31 March 2026",
+      "file": "D2_financial_statement_summary_current_year.md",
+      "meta": [
+        {
+          "label": "Client",
+          "value": "Ashcombe Garden Centres Ltd"
+        },
+        {
+          "label": "Prepared by",
+          "value": "Hartley Vane Chartered Accountants"
+        },
+        {
+          "label": "Date prepared",
+          "value": "22 May 2026"
+        },
+        {
+          "label": "Period",
+          "value": "Year ended 31 March 2026"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D2 §1",
+          "heading": "Profit and loss summary",
+          "columns": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            {
+              "element_id": "D2-S1-R1",
+              "cells": [
+                "Revenue",
+                "£2,940,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R2",
+              "cells": [
+                "Cost of sales",
+                "£1,646,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R3",
+              "cells": [
+                "Gross profit",
+                "£1,294,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R4",
+              "cells": [
+                "Operating expenses",
+                "£1,114,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R5",
+              "cells": [
+                "Operating profit",
+                "£180,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R6",
+              "cells": [
+                "Interest payable",
+                "£36,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R7",
+              "cells": [
+                "Profit before tax",
+                "£144,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R8",
+              "cells": [
+                "Tax",
+                "£36,000"
+              ]
+            },
+            {
+              "element_id": "D2-S1-R9",
+              "cells": [
+                "Net profit after tax",
+                "£108,000"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S2",
+          "ref": "D2 §2",
+          "heading": "Balance sheet extract at 31 March 2026",
+          "columns": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            {
+              "element_id": "D2-S2-R1",
+              "cells": [
+                "Stock",
+                "£402,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R2",
+              "cells": [
+                "Trade debtors",
+                "£38,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R3",
+              "cells": [
+                "Cash at bank",
+                "£54,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R4",
+              "cells": [
+                "Total current assets",
+                "£494,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R5",
+              "cells": [
+                "Current liabilities",
+                "£380,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R6",
+              "cells": [
+                "Bank overdraft drawn (included in current liabilities)",
+                "£104,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R7",
+              "cells": [
+                "Term loan (site refurbishment)",
+                "£236,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R8",
+              "cells": [
+                "Total bank borrowing",
+                "£340,000"
+              ]
+            },
+            {
+              "element_id": "D2-S2-R9",
+              "cells": [
+                "Net assets",
+                "£763,000"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S3",
+          "ref": "D2 §3",
+          "heading": "Key ratios",
+          "columns": [
+            "Ratio",
+            "Value"
+          ],
+          "rows": [
+            {
+              "element_id": "D2-S3-R1",
+              "cells": [
+                "Gross margin",
+                "44.0%"
+              ]
+            },
+            {
+              "element_id": "D2-S3-R2",
+              "cells": [
+                "Current ratio",
+                "1.30"
+              ]
+            },
+            {
+              "element_id": "D2-S3-R3",
+              "cells": [
+                "Interest cover (operating profit ÷ interest payable)",
+                "5.0x"
+              ]
+            },
+            {
+              "element_id": "D2-S3-R4",
+              "cells": [
+                "Stock days",
+                "89"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S4",
+          "ref": "D2 §4",
+          "heading": "Notes",
+          "columns": [
+            "Note",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D2-S4-R1",
+              "cells": [
+                "Largest customer",
+                "Not applicable (sales are to retail customers)"
+              ]
+            },
+            {
+              "element_id": "D2-S4-R2",
+              "cells": [
+                "Dividends",
+                "No dividends were paid in the year"
+              ]
+            },
+            {
+              "element_id": "D2-S4-R3",
+              "cells": [
+                "Comparative figures",
+                "Not included in this summary. See the Bank's previous-year credit review record."
+              ]
+            }
+          ],
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "doc_id": "D3",
+      "title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+      "file": "D3_previous_year_credit_review_record.md",
+      "meta": [
+        {
+          "label": "Lender",
+          "value": "Aldermoor Commercial Bank"
+        },
+        {
+          "label": "Client",
+          "value": "Ashcombe Garden Centres Ltd"
+        },
+        {
+          "label": "Review date",
+          "value": "9 June 2025"
+        },
+        {
+          "label": "Prepared by",
+          "value": "M. Trevanion, Relationship Manager"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D3 §1",
+          "heading": "Client snapshot at last review",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D3-S1-R1",
+              "cells": [
+                "Number of employees",
+                "52"
+              ]
+            },
+            {
+              "element_id": "D3-S1-R2",
+              "cells": [
+                "Directors and shareholdings",
+                "Helen Ashcombe (70%), Daniel Reyes (30%)"
+              ]
+            },
+            {
+              "element_id": "D3-S1-R3",
+              "cells": [
+                "Tax arrears or HMRC arrangements",
+                "None"
+              ]
+            },
+            {
+              "element_id": "D3-S1-R4",
+              "cells": [
+                "Legal actions or court claims",
+                "None"
+              ]
+            },
+            {
+              "element_id": "D3-S1-R5",
+              "cells": [
+                "Largest customer",
+                "Not applicable (sales are to retail customers)"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S2",
+          "ref": "D3 §2",
+          "heading": "Financial figures, year ended 31 March 2025",
+          "columns": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            {
+              "element_id": "D3-S2-R1",
+              "cells": [
+                "Revenue",
+                "£2,800,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R2",
+              "cells": [
+                "Gross profit",
+                "£1,260,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R3",
+              "cells": [
+                "Gross margin",
+                "45.0%"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R4",
+              "cells": [
+                "Operating profit",
+                "£150,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R5",
+              "cells": [
+                "Interest payable",
+                "£30,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R6",
+              "cells": [
+                "Net profit after tax",
+                "£90,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R7",
+              "cells": [
+                "Stock",
+                "£318,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R8",
+              "cells": [
+                "Trade debtors",
+                "£55,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R9",
+              "cells": [
+                "Cash at bank",
+                "£47,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R10",
+              "cells": [
+                "Current ratio",
+                "1.40"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R11",
+              "cells": [
+                "Interest cover",
+                "5.0x"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R12",
+              "cells": [
+                "Stock days",
+                "75"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R13",
+              "cells": [
+                "Total bank borrowing",
+                "£290,000"
+              ]
+            },
+            {
+              "element_id": "D3-S2-R14",
+              "cells": [
+                "Net assets",
+                "£655,000"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S3",
+          "ref": "D3 §3",
+          "heading": "Facilities and account conduct",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D3-S3-R1",
+              "cells": [
+                "Overdraft limit",
+                "£120,000"
+              ]
+            },
+            {
+              "element_id": "D3-S3-R2",
+              "cells": [
+                "Excesses over limit in previous 12 months",
+                "1"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S4",
+          "ref": "D3 §4",
+          "heading": "Reviewer assessment",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D3-S4-R1",
+              "cells": [
+                "Risk grade",
+                "3 (Satisfactory)"
+              ]
+            }
+          ],
+          "paragraphs": [
+            {
+              "element_id": "D3-S4-P1",
+              "text": "Trading was satisfactory with a seasonal pattern of borrowing. One short overdraft excess was noted in the spring stock build. Renewal of the £120,000 overdraft was approved on unchanged terms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "doc_id": "D4",
+      "title": "Facility Agreement Summary and Account Conduct Statement",
+      "file": "D4_facility_agreement_and_account_conduct.md",
+      "meta": [
+        {
+          "label": "Lender",
+          "value": "Aldermoor Commercial Bank"
+        },
+        {
+          "label": "Borrower",
+          "value": "Ashcombe Garden Centres Ltd"
+        },
+        {
+          "label": "Agreement date",
+          "value": "16 June 2025"
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "S1",
+          "ref": "D4 §1",
+          "heading": "Facility terms",
+          "columns": [
+            "Term",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D4-S1-R1",
+              "cells": [
+                "Facility type",
+                "Overdraft (revolving)"
+              ]
+            },
+            {
+              "element_id": "D4-S1-R2",
+              "cells": [
+                "Limit",
+                "£120,000"
+              ]
+            },
+            {
+              "element_id": "D4-S1-R3",
+              "cells": [
+                "Interest rate",
+                "Bank base rate + 3.50%"
+              ]
+            },
+            {
+              "element_id": "D4-S1-R4",
+              "cells": [
+                "Agreement date",
+                "16 June 2025"
+              ]
+            },
+            {
+              "element_id": "D4-S1-R5",
+              "cells": [
+                "Next review date",
+                "15 June 2026"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S2",
+          "ref": "D4 §2",
+          "heading": "Security",
+          "columns": [
+            "Security",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D4-S2-R1",
+              "cells": [
+                "Debenture",
+                "Debenture over all assets of the company"
+              ]
+            },
+            {
+              "element_id": "D4-S2-R2",
+              "cells": [
+                "Personal guarantee",
+                "Helen Ashcombe, limited to £60,000"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S3",
+          "ref": "D4 §3",
+          "heading": "Financial covenants",
+          "columns": [
+            "Covenant",
+            "Requirement"
+          ],
+          "rows": [
+            {
+              "element_id": "D4-S3-R1",
+              "cells": [
+                "Minimum interest cover",
+                "3.0x"
+              ]
+            },
+            {
+              "element_id": "D4-S3-R2",
+              "cells": [
+                "Minimum current ratio",
+                "1.15"
+              ]
+            },
+            {
+              "element_id": "D4-S3-R3",
+              "cells": [
+                "Testing",
+                "Annually, on the annual accounts"
+              ]
+            }
+          ],
+          "paragraphs": []
+        },
+        {
+          "section_id": "S4",
+          "ref": "D4 §4",
+          "heading": "Account conduct",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            {
+              "element_id": "D4-S4-R1",
+              "cells": [
+                "Statement period",
+                "12 months to 31 May 2026"
+              ]
+            },
+            {
+              "element_id": "D4-S4-R2",
+              "cells": [
+                "Number of excesses over limit",
+                "None"
+              ]
+            },
+            {
+              "element_id": "D4-S4-R3",
+              "cells": [
+                "Largest excess",
+                "Not applicable"
+              ]
+            },
+            {
+              "element_id": "D4-S4-R4",
+              "cells": [
+                "Longest excess",
+                "Not applicable"
+              ]
+            }
+          ],
+          "paragraphs": []
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "status": "DRAFT - not approved",
+    "paragraphs": [
+      "Ashcombe Garden Centres Ltd operates two garden centres with cafés, is based in Marlstone and was incorporated in May 2014. It is owned by its two directors, Helen Ashcombe (70%) and Daniel Reyes (30%), and employs 58 staff (52 at the last review). The company is requesting an increase in its overdraft limit from £120,000 to £160,000 to fund seasonal stock purchases.",
+      "Revenue rose 5.0% to £2,940,000 in the year ended 31 March 2026 (previous year: £2,800,000). Operating profit rose to £180,000 from £150,000, and net profit after tax was £108,000. Gross margin improved to 44.0%, from 43.0% the previous year. Interest cover was 5.0x, unchanged from the previous year and above the covenant minimum of 3.0x.",
+      "The facility is secured by a debenture over the company's assets and a personal guarantee from Daniel Reyes limited to £60,000. The current ratio was 1.30 (previous year: 1.40), above the covenant minimum of 1.15.",
+      "Compared with last year's review, the differences flagged are higher stock, higher bank borrowing and no overdraft excesses in the past 12 months (one in the previous review period). No other material changes were identified. Stock rose to £402,000 from £318,000 while revenue grew 5.0%, which indicates that stock is selling through more quickly than last year. The existing overdraft is priced at base rate + 3.50% and is next due for review on 15 June 2026; the increase does not take effect until the Bank confirms credit approval."
+    ],
+    "paragraph_claim_ids": [
+      [
+        "S3-C01",
+        "S3-C02",
+        "S3-C03"
+      ],
+      [
+        "S3-C04",
+        "S3-C05",
+        "S3-C06",
+        "S3-C07"
+      ],
+      [
+        "S3-C08",
+        "S3-C09"
+      ],
+      [
+        "S3-C10",
+        "S3-C11",
+        "S3-C12"
+      ]
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "S3-C01",
+      "order": 1,
+      "text": "Ashcombe Garden Centres Ltd operates two garden centres with cafés, is based in Marlstone and was incorporated in May 2014.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R5",
+          "label": "Nature of business",
+          "highlight": "Operation of two garden centres with cafés"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R4",
+          "label": "Registered address",
+          "highlight": "Pennhallow Road, Marlstone ZZ2 8LN"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R3",
+          "label": "Date of incorporation",
+          "highlight": "22 May 2014"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Taken directly from the source document.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C02",
+      "order": 2,
+      "text": "It is owned by its two directors, Helen Ashcombe (70%) and Daniel Reyes (30%), and employs 58 staff (52 at the last review).",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S2",
+          "section_ref": "D1 §2",
+          "section_heading": "Directors and shareholders",
+          "element_id": "D1-S2-R1",
+          "label": "Helen Ashcombe",
+          "highlight": "70%"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S2",
+          "section_ref": "D1 §2",
+          "section_heading": "Directors and shareholders",
+          "element_id": "D1-S2-R2",
+          "label": "Daniel Reyes",
+          "highlight": "30%"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S1",
+          "section_ref": "D1 §1",
+          "section_heading": "Business details",
+          "element_id": "D1-S1-R6",
+          "label": "Number of employees",
+          "highlight": "58"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S1",
+          "section_ref": "D3 §1",
+          "section_heading": "Client snapshot at last review",
+          "element_id": "D3-S1-R1",
+          "label": "Number of employees",
+          "highlight": "52"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "All values found in the source documents.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C03",
+      "order": 3,
+      "text": "The company is requesting an increase in its overdraft limit from £120,000 to £160,000 to fund seasonal stock purchases.",
+      "sources": [
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Facility request",
+          "element_id": "D1-S3-R1",
+          "label": "Existing facility",
+          "highlight": "Overdraft, limit £120,000"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Facility request",
+          "element_id": "D1-S3-R2",
+          "label": "Requested facility",
+          "highlight": "Overdraft, limit £180,000"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Facility request",
+          "element_id": "D1-S3-R4",
+          "label": "Purpose",
+          "highlight": "Seasonal stock purchases ahead of the autumn and Christmas trading period"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Taken directly from the source document.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C04",
+      "order": 4,
+      "text": "Revenue rose 5.0% to £2,940,000 in the year ended 31 March 2026 (previous year: £2,800,000).",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Profit and loss summary",
+          "element_id": "D2-S1-R1",
+          "label": "Revenue",
+          "highlight": "£2,940,000"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R1",
+          "label": "Revenue",
+          "highlight": "£2,800,000"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Both figures found; the percentage was calculated by the agent.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C05",
+      "order": 5,
+      "text": "Operating profit rose to £180,000 from £150,000, and net profit after tax was £108,000.",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Profit and loss summary",
+          "element_id": "D2-S1-R5",
+          "label": "Operating profit",
+          "highlight": "£180,000"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R4",
+          "label": "Operating profit",
+          "highlight": "£150,000"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S1",
+          "section_ref": "D2 §1",
+          "section_heading": "Profit and loss summary",
+          "element_id": "D2-S1-R9",
+          "label": "Net profit after tax",
+          "highlight": "£108,000"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "All values found in the source documents.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C06",
+      "order": 6,
+      "text": "Gross margin improved to 44.0%, from 43.0% the previous year.",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S3",
+          "section_ref": "D2 §3",
+          "section_heading": "Key ratios",
+          "element_id": "D2-S3-R1",
+          "label": "Gross margin",
+          "highlight": "44.0%"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R3",
+          "label": "Gross margin",
+          "highlight": "45.0%"
+        }
+      ],
+      "cue": {
+        "status": "Discrepancy",
+        "confidence": "Low",
+        "note": "Automated cross-check: the previous-year comparison in this claim could not be matched to the prior-year review record.",
+        "check_hint": "Check first"
+      }
+    },
+    {
+      "claim_id": "S3-C07",
+      "order": 7,
+      "text": "Interest cover was 5.0x, unchanged from the previous year and above the covenant minimum of 3.0x.",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S3",
+          "section_ref": "D2 §3",
+          "section_heading": "Key ratios",
+          "element_id": "D2-S3-R3",
+          "label": "Interest cover (operating profit ÷ interest payable)",
+          "highlight": "5.0x"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R11",
+          "label": "Interest cover",
+          "highlight": "5.0x"
+        },
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S3",
+          "section_ref": "D4 §3",
+          "section_heading": "Financial covenants",
+          "element_id": "D4-S3-R1",
+          "label": "Minimum interest cover",
+          "highlight": "3.0x"
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "All values found in the source documents.",
+        "check_hint": "Spot-check"
+      }
+    },
+    {
+      "claim_id": "S3-C08",
+      "order": 8,
+      "text": "The facility is secured by a debenture over the company's assets and a personal guarantee from Daniel Reyes limited to £60,000.",
+      "sources": [
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S2",
+          "section_ref": "D4 §2",
+          "section_heading": "Security",
+          "element_id": "D4-S2-R1",
+          "label": "Debenture",
+          "highlight": "Debenture over all assets of the company"
+        },
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S2",
+          "section_ref": "D4 §2",
+          "section_heading": "Security",
+          "element_id": "D4-S2-R2",
+          "label": "Personal guarantee",
+          "highlight": "Helen Ashcombe, limited to £60,000"
+        }
+      ],
+      "cue": {
+        "status": "Uncertain",
+        "confidence": "Medium",
+        "note": "More than one director is named across the documents; please confirm the guarantor.",
+        "check_hint": "Check"
+      }
+    },
+    {
+      "claim_id": "S3-C09",
+      "order": 9,
+      "text": "The current ratio was 1.30 (previous year: 1.40), above the covenant minimum of 1.15.",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S3",
+          "section_ref": "D2 §3",
+          "section_heading": "Key ratios",
+          "element_id": "D2-S3-R2",
+          "label": "Current ratio",
+          "highlight": "1.30"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R10",
+          "label": "Current ratio",
+          "highlight": "1.40"
+        },
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S3",
+          "section_ref": "D4 §3",
+          "section_heading": "Financial covenants",
+          "element_id": "D4-S3-R2",
+          "label": "Minimum current ratio",
+          "highlight": "1.15"
+        }
+      ],
+      "cue": {
+        "status": "Uncertain",
+        "confidence": "Medium",
+        "note": "The ratio and the covenant threshold come from two different documents; neither document states the comparison.",
+        "check_hint": "Check"
+      }
+    },
+    {
+      "claim_id": "S3-C10",
+      "order": 10,
+      "text": "Compared with last year's review, the differences flagged are higher stock, higher bank borrowing and no overdraft excesses in the past 12 months (one in the previous review period). No other material changes were identified.",
+      "sources": [
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S4",
+          "section_ref": "D4 §4",
+          "section_heading": "Account conduct",
+          "element_id": "D4-S4-R2",
+          "label": "Number of excesses over limit",
+          "highlight": "None"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S3",
+          "section_ref": "D3 §3",
+          "section_heading": "Facilities and account conduct",
+          "element_id": "D3-S3-R2",
+          "label": "Excesses over limit in previous 12 months",
+          "highlight": "1"
+        },
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S2",
+          "section_ref": "D2 §2",
+          "section_heading": "Balance sheet extract at 31 March 2026",
+          "element_id": "D2-S2-R8",
+          "label": "Total bank borrowing",
+          "highlight": "£340,000"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R13",
+          "label": "Total bank borrowing",
+          "highlight": "£290,000"
+        }
+      ],
+      "cue": {
+        "status": "Uncertain",
+        "confidence": "Medium",
+        "note": "This is a completeness statement; the agent cannot confirm that every change was captured.",
+        "check_hint": "Check"
+      }
+    },
+    {
+      "claim_id": "S3-C11",
+      "order": 11,
+      "text": "Stock rose to £402,000 from £318,000 while revenue grew 5.0%, which indicates that stock is selling through more quickly than last year.",
+      "sources": [
+        {
+          "doc_id": "D2",
+          "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+          "section_id": "S2",
+          "section_ref": "D2 §2",
+          "section_heading": "Balance sheet extract at 31 March 2026",
+          "element_id": "D2-S2-R1",
+          "label": "Stock",
+          "highlight": "£402,000"
+        },
+        {
+          "doc_id": "D3",
+          "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+          "section_id": "S2",
+          "section_ref": "D3 §2",
+          "section_heading": "Financial figures, year ended 31 March 2025",
+          "element_id": "D3-S2-R7",
+          "label": "Stock",
+          "highlight": "£318,000"
+        }
+      ],
+      "cue": {
+        "status": "Uncertain",
+        "confidence": "Low",
+        "note": "Part of this claim is an interpretation by the agent, not a statement found in the documents.",
+        "check_hint": "Check"
+      }
+    },
+    {
+      "claim_id": "S3-C12",
+      "order": 12,
+      "text": "The existing overdraft is priced at base rate + 3.50% and is next due for review on 15 June 2026; the increase does not take effect until the Bank confirms credit approval.",
+      "sources": [
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S1",
+          "section_ref": "D4 §1",
+          "section_heading": "Facility terms",
+          "element_id": "D4-S1-R3",
+          "label": "Interest rate",
+          "highlight": "Bank base rate + 3.50%"
+        },
+        {
+          "doc_id": "D4",
+          "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+          "section_id": "S1",
+          "section_ref": "D4 §1",
+          "section_heading": "Facility terms",
+          "element_id": "D4-S1-R5",
+          "label": "Next review date",
+          "highlight": "15 June 2026"
+        },
+        {
+          "doc_id": "D1",
+          "doc_title": "Client Information and Facility Request Form",
+          "section_id": "S3",
+          "section_ref": "D1 §3",
+          "section_heading": "Facility request",
+          "element_id": "D1-S3-P1",
+          "label": "Paragraph",
+          "highlight": "All requests are subject to credit approval by the Bank. No change to the facility takes effect until the Bank confirms approval in writing."
+        }
+      ],
+      "cue": {
+        "status": "Supported",
+        "confidence": "High",
+        "note": "Taken directly from the source document.",
+        "check_hint": "Spot-check"
+      }
+    }
+  ],
+  "year_on_year": [
+    {
+      "item": "Number of employees",
+      "previous": "52",
+      "current": "58",
+      "changed": true,
+      "previous_source": "D3-S1-R1",
+      "current_source": "D1-S1-R6"
+    },
+    {
+      "item": "Revenue",
+      "previous": "£2,800,000",
+      "current": "£2,940,000",
+      "changed": true,
+      "previous_source": "D3-S2-R1",
+      "current_source": "D2-S1-R1"
+    },
+    {
+      "item": "Gross margin",
+      "previous": "45.0%",
+      "current": "44.0%",
+      "changed": true,
+      "previous_source": "D3-S2-R3",
+      "current_source": "D2-S3-R1"
+    },
+    {
+      "item": "Operating profit",
+      "previous": "£150,000",
+      "current": "£180,000",
+      "changed": true,
+      "previous_source": "D3-S2-R4",
+      "current_source": "D2-S1-R5"
+    },
+    {
+      "item": "Net profit after tax",
+      "previous": "£90,000",
+      "current": "£108,000",
+      "changed": true,
+      "previous_source": "D3-S2-R6",
+      "current_source": "D2-S1-R9"
+    },
+    {
+      "item": "Stock",
+      "previous": "£318,000",
+      "current": "£402,000",
+      "changed": true,
+      "previous_source": "D3-S2-R7",
+      "current_source": "D2-S2-R1"
+    },
+    {
+      "item": "Stock days",
+      "previous": "75",
+      "current": "89",
+      "changed": true,
+      "previous_source": "D3-S2-R12",
+      "current_source": "D2-S3-R4"
+    },
+    {
+      "item": "Current ratio",
+      "previous": "1.40",
+      "current": "1.30",
+      "changed": true,
+      "previous_source": "D3-S2-R10",
+      "current_source": "D2-S3-R2"
+    },
+    {
+      "item": "Interest cover",
+      "previous": "5.0x",
+      "current": "5.0x",
+      "changed": false,
+      "previous_source": "D3-S2-R11",
+      "current_source": "D2-S3-R3"
+    },
+    {
+      "item": "Total bank borrowing",
+      "previous": "£290,000",
+      "current": "£340,000",
+      "changed": true,
+      "previous_source": "D3-S2-R13",
+      "current_source": "D2-S2-R8"
+    },
+    {
+      "item": "Tax arrears / HMRC arrangements",
+      "previous": "None",
+      "current": "None",
+      "changed": false,
+      "previous_source": "D3-S1-R3",
+      "current_source": "D1-S4-R1"
+    },
+    {
+      "item": "Legal actions",
+      "previous": "None",
+      "current": "Yes. A county court claim for £41,500 was issued against the company on 14 April 2026 by a former supplier, Fernbrook Nurseries. The claim is being defended; no hearing date has been set.",
+      "changed": true,
+      "previous_source": "D3-S1-R4",
+      "current_source": "D1-S4-R2"
+    },
+    {
+      "item": "Directors and shareholders",
+      "previous": "Helen Ashcombe (70%), Daniel Reyes (30%)",
+      "current": "None",
+      "changed": true,
+      "previous_source": "D3-S1-R2",
+      "current_source": "D1-S4-R3"
+    },
+    {
+      "item": "Overdraft excesses (12 months)",
+      "previous": "1",
+      "current": "None",
+      "changed": true,
+      "previous_source": "D3-S3-R2",
+      "current_source": "D4-S4-R2"
+    }
+  ]
+}

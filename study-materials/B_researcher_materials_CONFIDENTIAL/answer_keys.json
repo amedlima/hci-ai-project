@@ -1,0 +1,1651 @@
+{
+  "set1": {
+    "client": "Harlow & Finch Joinery Ltd",
+    "expected_final_decision": "approve_with_corrections_or_reject",
+    "claims": [
+      {
+        "claim_id": "S1-C01",
+        "order": 1,
+        "text": "Harlow & Finch Joinery Ltd is a bespoke timber joinery manufacturer based in Calderwick, incorporated in March 2011.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R5",
+            "label": "Nature of business",
+            "highlight": "Bespoke timber joinery manufacturing"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R3",
+            "label": "Date of incorporation",
+            "highlight": "14 March 2011"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R4",
+            "label": "Registered address",
+            "highlight": "Unit 6, Tannery Yard, Calderwick ZZ4 2AB"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C02",
+        "order": 2,
+        "text": "The company employs 31 staff and is owned by its two directors, Eleanor Harlow (60%) and Marcus Finch (40%).",
+        "is_correct": false,
+        "error_id": "S1-E1",
+        "slot": "DET",
+        "error_type": "Incorrect client information",
+        "category": "Factual error",
+        "severity": "Low",
+        "what_is_wrong": "States 31 employees.",
+        "correct_information": "The company currently employs 34 staff. 31 was last year's figure. The ownership part of the claim is correct.",
+        "corrected_text": "The company employs 34 staff and is owned by its two directors, Eleanor Harlow (60%) and Marcus Finch (40%).",
+        "why_it_matters": "The agent copied the prior-year figure. A small error, but it shows the summary mixing up current and previous records.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R6",
+            "label": "Number of employees",
+            "highlight": "34"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R1",
+            "label": "Number of employees",
+            "highlight": "31"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      },
+      {
+        "claim_id": "S1-C03",
+        "order": 3,
+        "text": "It is requesting an increase in its overdraft limit from £150,000 to £220,000 to fund additional timber stock and working capital for a new housing-developer contract.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R1",
+            "label": "Existing facility",
+            "highlight": "Overdraft, limit £150,000"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R2",
+            "label": "Requested facility",
+            "highlight": "Overdraft, limit £220,000"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R4",
+            "label": "Purpose",
+            "highlight": "Additional timber stock and working capital for a new housing-developer contract"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C04",
+        "order": 4,
+        "text": "Revenue rose 15.3% to £2,480,000 in the year ended 31 December 2025 (previous year: £2,150,000).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R1",
+            "label": "Revenue",
+            "highlight": "£2,480,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R1",
+            "label": "Revenue",
+            "highlight": "£2,150,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C05",
+        "order": 5,
+        "text": "Operating profit also increased, to £174,000 from £162,000 the previous year.",
+        "is_correct": false,
+        "error_id": "S1-E2",
+        "slot": "CMP",
+        "error_type": "Incorrect year-on-year comparison",
+        "category": "Incorrect comparison",
+        "severity": "High",
+        "what_is_wrong": "States the previous-year operating profit as £162,000, so reports an increase.",
+        "correct_information": "Previous-year operating profit was £182,000. Operating profit fell by £8,000 (4.4%) to £174,000.",
+        "corrected_text": "Operating profit fell to £174,000 from £182,000 the previous year.",
+        "why_it_matters": "Reverses the direction of the profit trend, which is central to a decision to lend more.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R5",
+            "label": "Operating profit",
+            "highlight": "£174,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R4",
+            "label": "Operating profit",
+            "highlight": "£182,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Discrepancy",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "S1-C06",
+        "order": 6,
+        "text": "Net profit after tax was £109,000 and net assets stood at £604,000 at the year end.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R9",
+            "label": "Net profit after tax",
+            "highlight": "£109,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S2",
+            "section_ref": "D2 §2",
+            "section_heading": "Balance sheet extract at 31 December 2025",
+            "element_id": "D2-S2-R9",
+            "label": "Net assets",
+            "highlight": "£604,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C07",
+        "order": 7,
+        "text": "The current ratio at 31 December 2025 was 1.40, above the covenant minimum of 1.25.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R2",
+            "label": "Current ratio",
+            "highlight": "1.40"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S3",
+            "section_ref": "D4 §3",
+            "section_heading": "Financial covenants",
+            "element_id": "D4-S3-R2",
+            "label": "Minimum current ratio",
+            "highlight": "1.25"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C08",
+        "order": 8,
+        "text": "The facility is secured by a debenture over the company's assets and a personal guarantee from Eleanor Harlow limited to £57,000.",
+        "is_correct": false,
+        "error_id": "S1-E3",
+        "slot": "FIG",
+        "error_type": "Incorrect financial amount",
+        "category": "Factual error",
+        "severity": "Medium",
+        "what_is_wrong": "States the personal guarantee limit as £57,000.",
+        "correct_information": "The personal guarantee from Eleanor Harlow is limited to £75,000.",
+        "corrected_text": "The facility is secured by a debenture over the company's assets and a personal guarantee from Eleanor Harlow limited to £75,000.",
+        "why_it_matters": "Misstates the security the bank holds. Digits are transposed, which is easy to miss when skimming.",
+        "evidence": [
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S2",
+            "section_ref": "D4 §2",
+            "section_heading": "Security",
+            "element_id": "D4-S2-R2",
+            "label": "Personal guarantee",
+            "highlight": "Eleanor Harlow, limited to £75,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Supported",
+        "cue_confidence": "High"
+      },
+      {
+        "claim_id": "S1-C09",
+        "order": 9,
+        "text": "Interest cover was 6.0x, against a covenant minimum of 4.0x.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R3",
+            "label": "Interest cover (operating profit ÷ interest payable)",
+            "highlight": "6.0x"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S3",
+            "section_ref": "D4 §3",
+            "section_heading": "Financial covenants",
+            "element_id": "D4-S3-R1",
+            "label": "Minimum interest cover",
+            "highlight": "4.0x"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C10",
+        "order": 10,
+        "text": "Customer concentration has increased: the largest customer, Brackenfield Homes, now accounts for 38% of revenue, up from 27% last year.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S4",
+            "section_ref": "D2 §4",
+            "section_heading": "Notes",
+            "element_id": "D2-S4-R1",
+            "label": "Largest customer",
+            "highlight": "Brackenfield Homes, 38% of revenue"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R5",
+            "label": "Largest customer",
+            "highlight": "Brackenfield Homes, 27% of revenue"
+          }
+        ]
+      },
+      {
+        "claim_id": "S1-C11",
+        "order": 11,
+        "text": "Compared with last year's review, two differences were flagged: higher customer concentration and three overdraft excesses in the past 12 months (none in the previous review period). No other material changes were identified.",
+        "is_correct": false,
+        "error_id": "S1-E4",
+        "slot": "OMI",
+        "error_type": "Missing important information",
+        "category": "Omission",
+        "severity": "High",
+        "what_is_wrong": "Says no other material changes were identified. The two differences it lists are correct.",
+        "correct_information": "The client declared a new HMRC Time to Pay arrangement (agreed November 2025) for £48,000 of VAT arrears, with £32,000 still outstanding. Last year's review recorded no tax arrears.",
+        "corrected_text": "Compared with last year's review, three differences were flagged: higher customer concentration, three overdraft excesses in the past 12 months (none in the previous review period), and a new HMRC Time to Pay arrangement with £32,000 of VAT arrears outstanding.",
+        "why_it_matters": "Tax arrears are a recognised sign of cash-flow stress and a change from last year. This is exactly what the agent was asked to flag.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S4",
+            "section_ref": "D1 §4",
+            "section_heading": "Client declarations",
+            "element_id": "D1-S4-R1",
+            "label": "Tax arrears or payment arrangements with HMRC?",
+            "highlight": "Yes. A Time to Pay arrangement was agreed with HMRC in November 2025 for £48,000 of VAT arrears; £32,000 remains outstanding."
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R3",
+            "label": "Tax arrears or HMRC arrangements",
+            "highlight": "None"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      },
+      {
+        "claim_id": "S1-C12",
+        "order": 12,
+        "text": "Overall, the company's financial position is stronger than last year on every key measure, supporting approval of the increase on unchanged terms.",
+        "is_correct": false,
+        "error_id": "S1-E5",
+        "slot": "CON",
+        "error_type": "Incorrect conclusion",
+        "category": "Unsupported claim",
+        "severity": "High",
+        "what_is_wrong": "Concludes the position is stronger on every key measure.",
+        "correct_information": "Several measures weakened: operating profit (£182,000 to £174,000), net profit (£120,000 to £109,000), cash (£95,000 to £62,000), current ratio (1.49 to 1.40), customer concentration (27% to 38%) and account conduct (no excesses to three). Only revenue and net assets improved.",
+        "corrected_text": "Overall, revenue and net assets grew, but profit, cash, the current ratio and account conduct all weakened compared with last year; the request needs careful review.",
+        "why_it_matters": "The recommendation is the part of the summary most likely to be acted on, and it does not follow from the evidence.",
+        "evidence": [
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R4",
+            "label": "Operating profit",
+            "highlight": "£182,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R6",
+            "label": "Net profit after tax",
+            "highlight": "£120,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R9",
+            "label": "Cash at bank",
+            "highlight": "£95,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 December 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 December 2024",
+            "element_id": "D3-S2-R10",
+            "label": "Current ratio",
+            "highlight": "1.49"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R2",
+            "label": "Current ratio",
+            "highlight": "1.40"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 December 2025",
+            "section_id": "S2",
+            "section_ref": "D2 §2",
+            "section_heading": "Balance sheet extract at 31 December 2025",
+            "element_id": "D2-S2-R3",
+            "label": "Cash at bank",
+            "highlight": "£62,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Low"
+      }
+    ]
+  },
+  "set2": {
+    "client": "Tidewell Freight Services Ltd",
+    "expected_final_decision": "approve_with_corrections_or_reject",
+    "claims": [
+      {
+        "claim_id": "S2-C01",
+        "order": 1,
+        "text": "Tidewell Freight Services Ltd is a regional road haulage and pallet distribution company based in Estonbridge, incorporated in September 2008, with 46 employees.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R5",
+            "label": "Nature of business",
+            "highlight": "Regional road haulage and pallet distribution"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R3",
+            "label": "Date of incorporation",
+            "highlight": "9 September 2008"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R6",
+            "label": "Number of employees",
+            "highlight": "46"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C02",
+        "order": 2,
+        "text": "It is owned by its two directors, Priya Deshmukh (55%) and Thomas Aldred (45%).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Directors and shareholders",
+            "element_id": "D1-S2-R1",
+            "label": "Priya Deshmukh",
+            "highlight": "55%"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Directors and shareholders",
+            "element_id": "D1-S2-R2",
+            "label": "Thomas Aldred",
+            "highlight": "45%"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C03",
+        "order": 3,
+        "text": "The company is requesting an increase in its overdraft limit from £200,000 to £275,000 to fund working capital for longer payment terms on a proposed supermarket distribution contract.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R1",
+            "label": "Existing facility",
+            "highlight": "Overdraft, limit £200,000"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R2",
+            "label": "Requested facility",
+            "highlight": "Overdraft, limit £275,000"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R4",
+            "label": "Purpose",
+            "highlight": "Working capital for longer payment terms on a proposed supermarket distribution contract"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C04",
+        "order": 4,
+        "text": "The existing overdraft is priced at base rate + 3.75% and is next due for review on 30 November 2026.",
+        "is_correct": false,
+        "error_id": "S2-E1",
+        "slot": "DET",
+        "error_type": "Wrong date",
+        "category": "Factual error",
+        "severity": "Medium",
+        "what_is_wrong": "States the next review date as 30 November 2026.",
+        "correct_information": "The next review date is 30 November 2025. The interest rate part of the claim is correct.",
+        "corrected_text": "The existing overdraft is priced at base rate + 3.75% and is next due for review on 30 November 2025.",
+        "why_it_matters": "Suggests the facility has a year left to run when it is in fact due for review now.",
+        "evidence": [
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S1",
+            "section_ref": "D4 §1",
+            "section_heading": "Facility terms",
+            "element_id": "D4-S1-R5",
+            "label": "Next review date",
+            "highlight": "30 November 2025"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      },
+      {
+        "claim_id": "S2-C05",
+        "order": 5,
+        "text": "Revenue fell 4.0% to £3,360,000 in the year ended 30 September 2025 (previous year: £3,500,000).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R1",
+            "label": "Revenue",
+            "highlight": "£3,360,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R1",
+            "label": "Revenue",
+            "highlight": "£3,500,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C06",
+        "order": 6,
+        "text": "Operating profit fell to £156,000 from £210,000, and net profit after tax was £88,000.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R5",
+            "label": "Operating profit",
+            "highlight": "£156,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R4",
+            "label": "Operating profit",
+            "highlight": "£210,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R9",
+            "label": "Net profit after tax",
+            "highlight": "£88,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C07",
+        "order": 7,
+        "text": "Interest cover was 4.0x, unchanged from the previous year and above the covenant minimum of 3.5x.",
+        "is_correct": false,
+        "error_id": "S2-E2",
+        "slot": "CMP",
+        "error_type": "Incorrect year-on-year comparison",
+        "category": "Incorrect comparison",
+        "severity": "High",
+        "what_is_wrong": "Says interest cover is unchanged from the previous year.",
+        "correct_information": "Interest cover fell from 6.0x to 4.0x. It is still above the 3.5x minimum, but the headroom has narrowed sharply.",
+        "corrected_text": "Interest cover fell to 4.0x from 6.0x the previous year; it remains above the covenant minimum of 3.5x.",
+        "why_it_matters": "Hides a marked deterioration in the company's ability to service its debt, just as it asks to borrow more.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R3",
+            "label": "Interest cover (operating profit ÷ interest payable)",
+            "highlight": "4.0x"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R11",
+            "label": "Interest cover",
+            "highlight": "6.0x"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Discrepancy",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "S2-C08",
+        "order": 8,
+        "text": "Total bank borrowing at the year end was £395,000, made up of the overdraft and a vehicle term loan.",
+        "is_correct": false,
+        "error_id": "S2-E3",
+        "slot": "FIG",
+        "error_type": "Incorrect financial amount",
+        "category": "Factual error",
+        "severity": "Medium",
+        "what_is_wrong": "States total bank borrowing as £395,000.",
+        "correct_information": "Total bank borrowing at 30 September 2025 was £430,000 (overdraft £176,000 plus term loan £254,000). £395,000 was the previous year's figure.",
+        "corrected_text": "Total bank borrowing at the year end was £430,000, made up of the overdraft and a vehicle term loan.",
+        "why_it_matters": "Understates the company's debt by £35,000 by using last year's figure.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S2",
+            "section_ref": "D2 §2",
+            "section_heading": "Balance sheet extract at 30 September 2025",
+            "element_id": "D2-S2-R8",
+            "label": "Total bank borrowing",
+            "highlight": "£430,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R13",
+            "label": "Total bank borrowing",
+            "highlight": "£395,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Supported",
+        "cue_confidence": "High"
+      },
+      {
+        "claim_id": "S2-C09",
+        "order": 9,
+        "text": "Cash at bank fell to £41,000 from £88,000; the current ratio was 1.20, above the covenant minimum of 1.10.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S2",
+            "section_ref": "D2 §2",
+            "section_heading": "Balance sheet extract at 30 September 2025",
+            "element_id": "D2-S2-R3",
+            "label": "Cash at bank",
+            "highlight": "£41,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R9",
+            "label": "Cash at bank",
+            "highlight": "£88,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R2",
+            "label": "Current ratio",
+            "highlight": "1.20"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S3",
+            "section_ref": "D4 §3",
+            "section_heading": "Financial covenants",
+            "element_id": "D4-S3-R2",
+            "label": "Minimum current ratio",
+            "highlight": "1.10"
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C10",
+        "order": 10,
+        "text": "Trade debtors rose to £612,000 from £540,000 even though revenue fell, which indicates that customers are paying more quickly than last year.",
+        "is_correct": false,
+        "error_id": "S2-E4",
+        "slot": "CON",
+        "error_type": "Incorrect conclusion",
+        "category": "Unsupported claim",
+        "severity": "Medium",
+        "what_is_wrong": "Concludes that customers are paying more quickly. The two debtor figures quoted are correct.",
+        "correct_information": "Debtors rising while revenue falls means customers are paying more slowly. Debtor days increased from 56 to 66.",
+        "corrected_text": "Trade debtors rose to £612,000 from £540,000 even though revenue fell; debtor days lengthened from 56 to 66, so customers are paying more slowly than last year.",
+        "why_it_matters": "Turns a warning sign about cash collection into a positive, on the very issue the new borrowing is meant to fund.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 30 September 2025",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R4",
+            "label": "Debtor days",
+            "highlight": "66"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 30 September 2024",
+            "element_id": "D3-S2-R12",
+            "label": "Debtor days",
+            "highlight": "56"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "S2-C11",
+        "order": 11,
+        "text": "The request would raise the overdraft limit by £75,000 (37.5%) and does not take effect until the Bank confirms credit approval.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R3",
+            "label": "Increase requested",
+            "highlight": "£75,000 (37.5%)"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-P1",
+            "label": "Paragraph",
+            "highlight": "All requests are subject to credit approval by the Bank. No change to the facility takes effect until the Bank confirms approval in writing."
+          }
+        ]
+      },
+      {
+        "claim_id": "S2-C12",
+        "order": 12,
+        "text": "Compared with last year's review, the differences flagged are lower profit, lower cash and one overdraft excess in the past 12 months (two in the previous review period). No other material changes were identified.",
+        "is_correct": false,
+        "error_id": "S2-E5",
+        "slot": "OMI",
+        "error_type": "Missing important information",
+        "category": "Omission",
+        "severity": "High",
+        "what_is_wrong": "Says no other material changes were identified. The differences it lists are correct.",
+        "correct_information": "Ownership and management changed: Gareth Aldred resigned on 30 June 2025 and transferred his 45% shareholding to Thomas Aldred, who became a director the same day. Last year's review lists Gareth Aldred as 45% shareholder.",
+        "corrected_text": "Compared with last year's review, the differences flagged are lower profit, lower cash, one overdraft excess in the past 12 months (two in the previous review period), and a change of director and 45% shareholder from Gareth Aldred to Thomas Aldred on 30 June 2025.",
+        "why_it_matters": "A new director and 45% owner has not been assessed by the bank. This is exactly the kind of change from last year the agent was asked to flag.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S4",
+            "section_ref": "D1 §4",
+            "section_heading": "Client declarations",
+            "element_id": "D1-S4-R3",
+            "label": "Changes to directors or shareholders since the last review?",
+            "highlight": "Yes. Gareth Aldred resigned as a director on 30 June 2025 and transferred his 45% shareholding to Thomas Aldred, who was appointed a director on the same day."
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Directors and shareholders",
+            "element_id": "D1-S2-R2",
+            "label": "Thomas Aldred",
+            "highlight": "30 June 2025"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 30 September 2024)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R2",
+            "label": "Directors and shareholdings",
+            "highlight": "Priya Deshmukh (55%), Gareth Aldred (45%)"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      }
+    ]
+  },
+  "set3": {
+    "client": "Ashcombe Garden Centres Ltd",
+    "expected_final_decision": "approve_with_corrections_or_reject",
+    "claims": [
+      {
+        "claim_id": "S3-C01",
+        "order": 1,
+        "text": "Ashcombe Garden Centres Ltd operates two garden centres with cafés, is based in Marlstone and was incorporated in May 2014.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R5",
+            "label": "Nature of business",
+            "highlight": "Operation of two garden centres with cafés"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R4",
+            "label": "Registered address",
+            "highlight": "Pennhallow Road, Marlstone ZZ2 8LN"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R3",
+            "label": "Date of incorporation",
+            "highlight": "22 May 2014"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C02",
+        "order": 2,
+        "text": "It is owned by its two directors, Helen Ashcombe (70%) and Daniel Reyes (30%), and employs 58 staff (52 at the last review).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Directors and shareholders",
+            "element_id": "D1-S2-R1",
+            "label": "Helen Ashcombe",
+            "highlight": "70%"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Directors and shareholders",
+            "element_id": "D1-S2-R2",
+            "label": "Daniel Reyes",
+            "highlight": "30%"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R6",
+            "label": "Number of employees",
+            "highlight": "58"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R1",
+            "label": "Number of employees",
+            "highlight": "52"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C03",
+        "order": 3,
+        "text": "The company is requesting an increase in its overdraft limit from £120,000 to £160,000 to fund seasonal stock purchases.",
+        "is_correct": false,
+        "error_id": "S3-E1",
+        "slot": "FIG",
+        "error_type": "Incorrect financial amount",
+        "category": "Factual error",
+        "severity": "High",
+        "what_is_wrong": "States the requested overdraft limit as £160,000.",
+        "correct_information": "The requested limit is £180,000, an increase of £60,000.",
+        "corrected_text": "The company is requesting an increase in its overdraft limit from £120,000 to £180,000 to fund seasonal stock purchases.",
+        "why_it_matters": "The amount requested is the core of the decision. An approver relying on the summary would consider the wrong figure.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R2",
+            "label": "Requested facility",
+            "highlight": "Overdraft, limit £180,000"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-R3",
+            "label": "Increase requested",
+            "highlight": "£60,000 (50.0%)"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Supported",
+        "cue_confidence": "High"
+      },
+      {
+        "claim_id": "S3-C04",
+        "order": 4,
+        "text": "Revenue rose 5.0% to £2,940,000 in the year ended 31 March 2026 (previous year: £2,800,000).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R1",
+            "label": "Revenue",
+            "highlight": "£2,940,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R1",
+            "label": "Revenue",
+            "highlight": "£2,800,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C05",
+        "order": 5,
+        "text": "Operating profit rose to £180,000 from £150,000, and net profit after tax was £108,000.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R5",
+            "label": "Operating profit",
+            "highlight": "£180,000"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R4",
+            "label": "Operating profit",
+            "highlight": "£150,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Profit and loss summary",
+            "element_id": "D2-S1-R9",
+            "label": "Net profit after tax",
+            "highlight": "£108,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C06",
+        "order": 6,
+        "text": "Gross margin improved to 44.0%, from 43.0% the previous year.",
+        "is_correct": false,
+        "error_id": "S3-E2",
+        "slot": "CMP",
+        "error_type": "Incorrect year-on-year comparison",
+        "category": "Incorrect comparison",
+        "severity": "Medium",
+        "what_is_wrong": "States the previous-year gross margin as 43.0%, so reports an improvement.",
+        "correct_information": "Previous-year gross margin was 45.0%. Gross margin fell by one percentage point to 44.0%.",
+        "corrected_text": "Gross margin fell to 44.0%, from 45.0% the previous year.",
+        "why_it_matters": "Reverses the direction of the margin trend; the business is earning less on each sale, not more.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R1",
+            "label": "Gross margin",
+            "highlight": "44.0%"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R3",
+            "label": "Gross margin",
+            "highlight": "45.0%"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Discrepancy",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "S3-C07",
+        "order": 7,
+        "text": "Interest cover was 5.0x, unchanged from the previous year and above the covenant minimum of 3.0x.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R3",
+            "label": "Interest cover (operating profit ÷ interest payable)",
+            "highlight": "5.0x"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R11",
+            "label": "Interest cover",
+            "highlight": "5.0x"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S3",
+            "section_ref": "D4 §3",
+            "section_heading": "Financial covenants",
+            "element_id": "D4-S3-R1",
+            "label": "Minimum interest cover",
+            "highlight": "3.0x"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C08",
+        "order": 8,
+        "text": "The facility is secured by a debenture over the company's assets and a personal guarantee from Daniel Reyes limited to £60,000.",
+        "is_correct": false,
+        "error_id": "S3-E3",
+        "slot": "DET",
+        "error_type": "Incorrect client information",
+        "category": "Factual error",
+        "severity": "Medium",
+        "what_is_wrong": "Names Daniel Reyes as the guarantor.",
+        "correct_information": "The personal guarantee is given by Helen Ashcombe. The £60,000 limit and the debenture are correct.",
+        "corrected_text": "The facility is secured by a debenture over the company's assets and a personal guarantee from Helen Ashcombe limited to £60,000.",
+        "why_it_matters": "Names the wrong person as legally liable for the guarantee.",
+        "evidence": [
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S2",
+            "section_ref": "D4 §2",
+            "section_heading": "Security",
+            "element_id": "D4-S2-R2",
+            "label": "Personal guarantee",
+            "highlight": "Helen Ashcombe, limited to £60,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      },
+      {
+        "claim_id": "S3-C09",
+        "order": 9,
+        "text": "The current ratio was 1.30 (previous year: 1.40), above the covenant minimum of 1.15.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R2",
+            "label": "Current ratio",
+            "highlight": "1.30"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R10",
+            "label": "Current ratio",
+            "highlight": "1.40"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S3",
+            "section_ref": "D4 §3",
+            "section_heading": "Financial covenants",
+            "element_id": "D4-S3-R2",
+            "label": "Minimum current ratio",
+            "highlight": "1.15"
+          }
+        ]
+      },
+      {
+        "claim_id": "S3-C10",
+        "order": 10,
+        "text": "Compared with last year's review, the differences flagged are higher stock, higher bank borrowing and no overdraft excesses in the past 12 months (one in the previous review period). No other material changes were identified.",
+        "is_correct": false,
+        "error_id": "S3-E4",
+        "slot": "OMI",
+        "error_type": "Missing important information",
+        "category": "Omission",
+        "severity": "High",
+        "what_is_wrong": "Says no other material changes were identified. The differences it lists are correct.",
+        "correct_information": "The client declared a county court claim for £41,500 issued on 14 April 2026 by a former supplier, Fernbrook Nurseries. Last year's review recorded no legal actions.",
+        "corrected_text": "Compared with last year's review, the differences flagged are higher stock, higher bank borrowing, no overdraft excesses in the past 12 months (one in the previous review period), and a new county court claim for £41,500 from a former supplier.",
+        "why_it_matters": "A pending court claim is a potential liability and a change from last year. This is exactly what the agent was asked to flag.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S4",
+            "section_ref": "D1 §4",
+            "section_heading": "Client declarations",
+            "element_id": "D1-S4-R2",
+            "label": "Legal actions or court claims?",
+            "highlight": "Yes. A county court claim for £41,500 was issued against the company on 14 April 2026 by a former supplier, Fernbrook Nurseries. The claim is being defended; no hearing date has been set."
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S1",
+            "section_ref": "D3 §1",
+            "section_heading": "Client snapshot at last review",
+            "element_id": "D3-S1-R4",
+            "label": "Legal actions or court claims",
+            "highlight": "None"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium"
+      },
+      {
+        "claim_id": "S3-C11",
+        "order": 11,
+        "text": "Stock rose to £402,000 from £318,000 while revenue grew 5.0%, which indicates that stock is selling through more quickly than last year.",
+        "is_correct": false,
+        "error_id": "S3-E5",
+        "slot": "CON",
+        "error_type": "Incorrect conclusion",
+        "category": "Unsupported claim",
+        "severity": "Medium",
+        "what_is_wrong": "Concludes that stock is selling through more quickly. The two stock figures quoted are correct.",
+        "correct_information": "Stock growing much faster than sales means stock is selling more slowly. Stock days increased from 75 to 89.",
+        "corrected_text": "Stock rose to £402,000 from £318,000 while revenue grew 5.0%; stock days lengthened from 75 to 89, so stock is selling through more slowly than last year.",
+        "why_it_matters": "Turns a warning sign about slow-moving stock into a positive, when the request is to fund more stock.",
+        "evidence": [
+          {
+            "doc_id": "D2",
+            "doc_title": "Financial Statement Summary, year ended 31 March 2026",
+            "section_id": "S3",
+            "section_ref": "D2 §3",
+            "section_heading": "Key ratios",
+            "element_id": "D2-S3-R4",
+            "label": "Stock days",
+            "highlight": "89"
+          },
+          {
+            "doc_id": "D3",
+            "doc_title": "Annual Credit Review Record, previous year (year ended 31 March 2025)",
+            "section_id": "S2",
+            "section_ref": "D3 §2",
+            "section_heading": "Financial figures, year ended 31 March 2025",
+            "element_id": "D3-S2-R12",
+            "label": "Stock days",
+            "highlight": "75"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "S3-C12",
+        "order": 12,
+        "text": "The existing overdraft is priced at base rate + 3.50% and is next due for review on 15 June 2026; the increase does not take effect until the Bank confirms credit approval.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S1",
+            "section_ref": "D4 §1",
+            "section_heading": "Facility terms",
+            "element_id": "D4-S1-R3",
+            "label": "Interest rate",
+            "highlight": "Bank base rate + 3.50%"
+          },
+          {
+            "doc_id": "D4",
+            "doc_title": "Facility Agreement Summary and Account Conduct Statement",
+            "section_id": "S1",
+            "section_ref": "D4 §1",
+            "section_heading": "Facility terms",
+            "element_id": "D4-S1-R5",
+            "label": "Next review date",
+            "highlight": "15 June 2026"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Facility Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Facility request",
+            "element_id": "D1-S3-P1",
+            "label": "Paragraph",
+            "highlight": "All requests are subject to credit approval by the Bank. No change to the facility takes effect until the Bank confirms approval in writing."
+          }
+        ]
+      }
+    ]
+  },
+  "practice": {
+    "client": "Lark & Lantern Bakery Ltd",
+    "expected_final_decision": "approve_with_corrections_or_reject",
+    "claims": [
+      {
+        "claim_id": "P-C01",
+        "order": 1,
+        "text": "Lark & Lantern Bakery Ltd is a craft bakery and café based in Sorrelgate, incorporated in June 2017.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R5",
+            "label": "Nature of business",
+            "highlight": "Craft bakery and café"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R3",
+            "label": "Date of incorporation",
+            "highlight": "6 June 2017"
+          }
+        ]
+      },
+      {
+        "claim_id": "P-C02",
+        "order": 2,
+        "text": "It is requesting a £45,000 loan over four years to replace its deck oven.",
+        "is_correct": false,
+        "error_id": "P-E1",
+        "slot": "FIG",
+        "error_type": "Incorrect financial amount",
+        "category": "Factual error",
+        "severity": "High",
+        "what_is_wrong": "States the loan requested as £45,000.",
+        "correct_information": "The loan requested is £40,000.",
+        "corrected_text": "It is requesting a £40,000 loan over four years to replace its deck oven.",
+        "why_it_matters": "The amount requested is the core of the decision.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S2",
+            "section_ref": "D1 §2",
+            "section_heading": "Loan request",
+            "element_id": "D1-S2-R1",
+            "label": "Loan requested",
+            "highlight": "£40,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Supported",
+        "cue_confidence": "High"
+      },
+      {
+        "claim_id": "P-C03",
+        "order": 3,
+        "text": "Revenue rose 7.0% to £412,000 in the year ended 31 March 2026 (previous year: £385,000).",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Latest financial figures (year ended 31 March 2026)",
+            "element_id": "D1-S3-R1",
+            "label": "Revenue",
+            "highlight": "£412,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Previous-Year Review Note",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Position at last review (year ended 31 March 2025)",
+            "element_id": "D2-S1-R3",
+            "label": "Revenue",
+            "highlight": "£385,000"
+          }
+        ]
+      },
+      {
+        "claim_id": "P-C04",
+        "order": 4,
+        "text": "Net profit after tax increased to £31,000 from £26,000 the previous year.",
+        "is_correct": false,
+        "error_id": "P-E2",
+        "slot": "CMP",
+        "error_type": "Incorrect year-on-year comparison",
+        "category": "Incorrect comparison",
+        "severity": "High",
+        "what_is_wrong": "States previous-year net profit as £26,000, so reports an increase.",
+        "correct_information": "Previous-year net profit was £36,000. Net profit fell to £31,000.",
+        "corrected_text": "Net profit after tax fell to £31,000 from £36,000 the previous year.",
+        "why_it_matters": "Reverses the direction of the profit trend.",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Latest financial figures (year ended 31 March 2026)",
+            "element_id": "D1-S3-R2",
+            "label": "Net profit after tax",
+            "highlight": "£31,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Previous-Year Review Note",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Position at last review (year ended 31 March 2025)",
+            "element_id": "D2-S1-R4",
+            "label": "Net profit after tax",
+            "highlight": "£36,000"
+          }
+        ],
+        "expected_action": "Edit (correct it) or Reject",
+        "cue_status": "Discrepancy",
+        "cue_confidence": "Low"
+      },
+      {
+        "claim_id": "P-C05",
+        "order": 5,
+        "text": "The business employs 12 staff, one more than last year, and is wholly owned by Naomi Lark.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Uncertain",
+        "cue_confidence": "Medium",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R6",
+            "label": "Number of employees",
+            "highlight": "12"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Previous-Year Review Note",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Position at last review (year ended 31 March 2025)",
+            "element_id": "D2-S1-R1",
+            "label": "Number of employees",
+            "highlight": "11"
+          },
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S1",
+            "section_ref": "D1 §1",
+            "section_heading": "Business details",
+            "element_id": "D1-S1-R7",
+            "label": "Owner",
+            "highlight": "Naomi Lark (100% shareholder and sole director)"
+          }
+        ]
+      },
+      {
+        "claim_id": "P-C06",
+        "order": 6,
+        "text": "Cash at bank was £18,000 at the year end (previous year: £22,000), and the business had no borrowing with the Bank at the last review.",
+        "is_correct": true,
+        "expected_action": "Approve",
+        "cue_status": "Supported",
+        "cue_confidence": "High",
+        "evidence": [
+          {
+            "doc_id": "D1",
+            "doc_title": "Client Information and Loan Request Form",
+            "section_id": "S3",
+            "section_ref": "D1 §3",
+            "section_heading": "Latest financial figures (year ended 31 March 2026)",
+            "element_id": "D1-S3-R3",
+            "label": "Cash at bank",
+            "highlight": "£18,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Previous-Year Review Note",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Position at last review (year ended 31 March 2025)",
+            "element_id": "D2-S1-R5",
+            "label": "Cash at bank",
+            "highlight": "£22,000"
+          },
+          {
+            "doc_id": "D2",
+            "doc_title": "Previous-Year Review Note",
+            "section_id": "S1",
+            "section_ref": "D2 §1",
+            "section_heading": "Position at last review (year ended 31 March 2025)",
+            "element_id": "D2-S1-R6",
+            "label": "Borrowing from the Bank",
+            "highlight": "None"
+          }
+        ]
+      }
+    ]
+  }
+}
