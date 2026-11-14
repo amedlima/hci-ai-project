@@ -41,4 +41,4 @@ Materials for the user study in *Delegating to AI Agents: Interfaces That Make C
 
 ## AI-use statement
 
-These study materials (documents, summaries, answer keys and experiment notes) were drafted with Claude (Anthropic). The team should review them and record this in the AI-use table in the main README. Names were invented and have not been checked against company registers; any resemblance to real organisations or people is coincidental.
+These study materials (documents, summaries, answer keys and experiment notes) were drafted with Claude (Anthropic).  Names were invented and have not been checked against company registers; any resemblance to real organisations or people is coincidental.
