@@ -1,6 +1,6 @@
 # Study materials: synthetic client documents and AI summaries
 
-Materials for the user study in *Delegating to AI Agents: Interfaces That Make Checking Easy* (LZSCC.241, Project 6). Everything here is synthetic: the bank, the clients, the people, the figures and the dates are invented. The "AI agent" is simulated with pre-written summaries that contain deliberately planted mistakes.
+Materials for the user study in *Delegating to AI Agents: Interfaces That Make Checking Easy* . Everything here is synthetic: the bank, the clients, the people, the figures and the dates are invented. The "AI agent" is simulated with pre-written summaries that contain deliberately planted mistakes.
 
 ## Contents
 
@@ -21,8 +21,6 @@ Materials for the user study in *Delegating to AI Agents: Interfaces That Make C
 - `answer_key_<set>.md`: full claim table, each planted error explained, correct claims, scoring rules.
 - `answer_keys.json`: the same keys for automatic scoring.
 - `planted_error_register.md`, `correct_statement_register.md`, `source_references.md`, `difficulty_and_comparability.md`.
-
-**Keep Part B away from participants.** If the GitHub repository is public and participants are classmates, do not push this folder until the study has finished (add it to `.gitignore` or keep it in a private location).
 
 ### Part C: experiment preparation (`C_experiment_preparation/`)
 
