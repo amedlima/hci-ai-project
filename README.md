@@ -45,7 +45,7 @@ We run a within-subject study: every participant tries every condition, in count
 - [Project Plan](../../wiki/Project-Plan)
 - [Weekly Log](../../wiki/Weekly-Log)
 - [Contributions](../../wiki/Contributions)
-- [Task board](../../projects/1)
+- [Task board](https://github.com/users/amedlima/projects/1)
 ## Team
 
 Muslima Akhmedova, Demirhan Demir, Hashir Sarfaraz Mian, Thaqi Sadathulla Syed, Alexandr Tichonov, Alen Yildiz
