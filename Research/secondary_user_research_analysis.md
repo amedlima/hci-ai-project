@@ -32,9 +32,9 @@ The user insights in Section 4 come from the following user studies reviewed in 
 
 ### 4.1 Pain Point 1: Trusting Fluent AI Answers Too Much (Automation Bias)
 
-- **What users do now:** When people use standard AI chat tools (which matches **Condition A** in this project), they read a smooth, well-written summary paragraph and quickly skim it to see if it sounds reasonable.
+- **What users do now:** When people use standard AI tools that show only a plain text answer (which matches **Condition A** in this project), they read a smooth, well-written summary paragraph and quickly skim it to see if it sounds reasonable.
 - **What goes wrong (Evidence from User Data):** Across $N = 528$ users in [Bansal *et al.* (2021)](./literature_review.md#25-does-the-whole-exceed-its-parts-the-effect-of-ai-explanations-on-complementary-team-performance) and $N = 308$ users in [Kim *et al.* (2025)](./literature_review.md#22-fostering-appropriate-reliance-on-large-language-models-the-role-of-explanations-sources-and-inconsistencies), people showed strong **over-trust (automation bias)**. Because the AI writes in a confident, natural style, users frequently accept wrong or made-up claims without questioning them. Even worse, when the AI gives a convincing-sounding explanation *without* showing the original source text, users actually trust wrong answers *more* than when no explanation is given.
-- **What this means for our design:** Showing a plain AI summary is unsafe for important documents. Our interface needs to break long summaries into separate, bite-sized claims and link each one to the original document text (`UR-01`, `UR-02`).
+- **What this means for our design:** Showing only a plain answer (**Condition A**) is unsafe for important documents. In **Condition C** (our own design), the interface splits the summary into a claim queue and links each claim to its highlighted passage in the document viewer (`UR-01`, `UR-02`).
 
 ### 4.2 Pain Point 2: Checking Long Documents by Hand is Slow and Tiring
 
@@ -44,9 +44,9 @@ The user insights in Section 4 come from the following user studies reviewed in 
 
 ### 4.3 Pain Point 3: Missing Contradictions When There Are No Visual Warnings
 
-- **What users do now:** Even when an AI tool gives numbered citation links (like in Adobe Acrobat AI or Gemini Notebook, which matches **Condition B** in this project), users usually click the first one or two links, see that they look fine, and assume the rest of the summary is also correct.
+- **What users do now:** Even when an AI tool shows an answer with source links, highlights and a confidence note (which matches **Condition B** in this project), users have to click sentences in the prose summary one by one, making it easy to skim and skip claims after checking the first one or two links.
 - **What goes wrong (Evidence from User Data):** In [Kim *et al.* (2025)](./literature_review.md#22-fostering-appropriate-reliance-on-large-language-models-the-role-of-explanations-sources-and-inconsistencies) ($N = 308$), users often missed cases where the AI summary said the opposite of the source document unless the interface clearly pointed out the **contradiction**. When the interface visually flagged conflicting information alongside the source text, users caught far more AI mistakes.
-- **What this means for our design:** Our interface should clearly label whether a claim is *Supported*, has a *Discrepancy/Contradiction*, or is *Uncertain*, and give visual hints on which claims need the most attention (`UR-03`, `UR-04`).
+- **What this means for our design:** In **Condition C** (our own design), each card in the claim queue displays a status badge (*Supported*, *Uncertain*, *Discrepancy*) and a checking hint upfront so reviewers immediately see which claims need checking first (`UR-03`, `UR-04`).
 
 ### 4.4 Pain Point 4: Not Knowing When the AI is Guessing (Over-Trust vs. Under-Trust)
 
@@ -58,7 +58,7 @@ The user insights in Section 4 come from the following user studies reviewed in 
 
 - **What users do now:** When an AI generates a finished draft on its own, human reviewers often fall into a "rubber-stamping" habit—clicking approve without feeling personally responsible for the result. On the other hand, if the interface shows long, complicated AI explanations for every sentence, users feel overwhelmed.
 - **What goes wrong (Evidence from User Data):** [Westphal *et al.* (2023)](./literature_review.md#26-decision-control-and-explanations-in-human-ai-collaboration-improving-user-perceptions-and-compliance) found that long explanations made tasks feel much more mentally exhausting without helping users perform better. By contrast, giving users direct **decision control** (buttons to accept, edit or reject items) made them feel more engaged and responsible. Similarly, [Balakayeva *et al.* (2025)](./literature_review.md#28-an-intelligent-enterprise-system-with-processing-and-verification-of-business-documents-using-big-data-and-ai) show that in business workflows, responsibility stays blurry unless there is a required human sign-off step and an audit log.
-- **What this means for our design:** Keep evidence highlights short and simple to avoid mental overload, give users clear *Approve*, *Edit* and *Reject* buttons for each claim (`UR-05`), and require a final sign-off checkbox that saves a clear audit log of who approved what (`UR-07`, `UR-08`).
+- **What this means for our design:** In **Condition C** (our own design), we use short agent notes instead of long explanations to keep workload manageable (`UR-09`), provide per-claim *Approve*, *Edit* and *Reject* buttons with undo (`UR-05`), block sign-off until all claims are decided and flagged claims are checked against their source (`SR-01`), and require a final sign-off dialog that produces a readable audit record (`UR-07`, `UR-08`).
 
 ## 5. Connecting User Pain Points to Project Requirements
 
