@@ -35,7 +35,7 @@ Investigates how explanations, source links and highlighted inconsistencies infl
 - Provides direct empirical evidence supporting source citations and contradiction highlighting in AI summaries.
 - Demonstrates how primary sources reduce over-trust (automation bias) on incorrect AI claims.
 - Shows that fluent AI explanations alone can mislead users into accepting false statements.
-- Directly informs the experimental comparison in this project between plain AI summaries (Condition A) and verification-enhanced interfaces showing sources and inconsistencies (Conditions B and C).
+- Directly informs the experimental comparison in this project between Condition A (plain answer), Condition B (answer with source links, highlights and a confidence note) and Condition C (our own design, which adds a claim-by-claim checking workflow with status badges, a sign-off gate and an audit record).
 
 ### 2.3 In Search of Verifiability: Explanations Rarely Enable Complementary Performance in AI-Advised Decision Making
 
@@ -63,7 +63,7 @@ Investigates how expressions of uncertainty influence user trust and reliance on
 - Supports communicating uncertainty explicitly alongside AI-generated summary claims.
 - Demonstrates that understandable uncertainty phrasing calibrates user trust and mitigates over-reliance.
 - Justifies flagging low-confidence or unverified claims so reviewers know which statements most need checking.
-- Informs the design of confidence and uncertainty notes in Conditions B and C of this project.
+- Informs the confidence note in Condition B (answer with source links, highlights and a confidence note) and the status badges, checking hints and short agent notes in Condition C (our own design).
 
 ### 2.5 Does the Whole Exceed its Parts? The Effect of AI Explanations on Complementary Team Performance
 
