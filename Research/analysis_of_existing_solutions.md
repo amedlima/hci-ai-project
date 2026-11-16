@@ -50,7 +50,7 @@ Factiverse is an AI-powered claim detection and verification platform. It analys
 
 **Relevance to the project:**
 
-Factiverse is one of the closest functional references for claim segmentation in this project. Its pattern of breaking an AI summary into discrete claims with status badges (Supported, Disputed, Unverified) directly informs our Condition C interface.
+Factiverse is one of the closest functional references for claim segmentation in this project. Its pattern of breaking an AI summary into a claim queue with status badges (adapted in our prototype as *Supported*, *Uncertain* and *Discrepancy*) directly informs **Condition C** (our own design).
 
 #### 3.1.2 Full Fact AI
 
@@ -124,7 +124,7 @@ Adobe Acrobat AI Assistant integrates generative AI summaries directly alongside
 
 **Relevance to the project:**
 
-Adobe Acrobat AI Assistant represents a practical reference for **Condition B** in this project (an interface showing the AI summary with clickable source links and passage highlights, but lacking structured claim sign-off and audit logging).
+Adobe Acrobat AI Assistant represents a practical reference for **Condition B** (answer with source links, highlights and a confidence note, but with no claim-by-claim approval, no sign-off gate and no audit record), and also informs the highlighted document viewer used alongside the claim queue in **Condition C** (our own design).
 
 #### 3.2.2 Gemini Notebook (formerly NotebookLM)
 
@@ -290,7 +290,7 @@ ABBYY FineReader includes a dedicated Compare Documents view that aligns two ver
 
 **Relevance to the project:**
 
-ABBYY's comparison view directly informs **Scenario A** in this project (*summarising a client file and flagging differences from last year*) as well as a *"what changed since last time"* view.
+ABBYY's comparison view directly informs **Scenario A** in this project (*summarising a client file and flagging differences from last year*) as well as the *"changes since last year"* tab in **Condition C** (our own design).
 
 ## 4. Comparative Feature Matrix
 
@@ -320,18 +320,18 @@ The following matrix compares the 11 platforms against the core requirements of 
 
 ## 5. Implications for the Project
 
-Based on the analysis of existing solutions, the following interface capabilities are selected for the prototype in this project:
+Based on the analysis of existing solutions, the table below shows how the three study conditions in our prototype—**Condition A** (plain answer), **Condition B** (answer with source links, highlights and a confidence note) and **Condition C** (our own design)—are structured:
 
-| Proposed prototype capability | Inspired by existing solutions | Target condition in this project |
+| Prototype feature | Inspired by existing solutions | Condition in this project |
 |---|---|---|
-| Inline citations with click-to-highlight source passages | Adobe Acrobat AI, Gemini Notebook, Anara | Condition B & Condition C |
-| Claim-level uncertainty / confidence indicators | Factiverse, Spektr | Condition B & Condition C |
-| Discrete claim segmentation with status badges (Supported, Discrepancy, Uncertain) | Factiverse, Scite | Condition C (Custom Design) |
-| Year-over-year discrepancy highlighting ("what changed since last year") | ABBYY FineReader, Litera Kira, Hebbia | Condition C (Scenario A) |
-| Hints prioritising which claims most need human checking | Full Fact AI, Spektr | Condition C (Custom Design) |
-| Claim-by-claim human accept, edit and reject controls | Full Fact AI, Elicit, Litera Kira | Condition C (Scenario B) |
-| Explicit final human sign-off step blocking unapproved actions | Spektr | Condition C (Scenario B) |
-| Third-party readable audit log of AI outputs, human checks and sign-off | Spektr | Condition C (Scenario B) |
+| Plain text AI summary with client documents in tabs | Standard AI chat / summary output | Condition A |
+| Clickable source links with highlighted passages in the document viewer | Adobe Acrobat AI, Gemini Notebook, Anara | Condition B & Condition C |
+| Short confidence and uncertainty notes | Factiverse, Spektr | Condition B & Condition C |
+| Claim queue with status badges (*Supported*, *Uncertain*, *Discrepancy*) and checking hints | Factiverse, Full Fact AI, Scite | Condition C |
+| Per-claim *Approve*, *Edit* and *Reject* buttons with undo | Full Fact AI, Elicit, Litera Kira | Condition C |
+| Blocked sign-off gate and responsibility confirmation dialog | Spektr | Condition C |
+| Readable audit record of AI outputs, human checks and sign-off | Spektr | Condition C |
+| "Changes since last year" comparison table (stretch feature) | ABBYY FineReader, Litera Kira, Hebbia | Condition C |
 
 ## 6. Declaration of AI Usage
 
@@ -345,7 +345,7 @@ AI tools were used as supporting tools throughout the preparation of this analys
 - Comparing the capabilities of different platforms against the project's requirements.
 - Filtering out redundant or less relevant software tools to keep the comparison focused on the project's goals.
 - Summarising product capabilities into a simplified, easy-to-read comparative feature matrix.
-- Mapping features from existing commercial solutions to the experimental prototype conditions (Conditions B and C).
+- Mapping features from existing commercial solutions to the experimental prototype conditions (Condition A, Condition B and Condition C).
 - Structuring and formatting the `analysis_of_existing_solutions.md` file.
 
 > [!NOTE]
