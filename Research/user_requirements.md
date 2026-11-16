@@ -11,8 +11,6 @@ The literature review explains the research behind human-AI interaction, the exi
 To make sure our requirements stay focused on the main problem in this project, they are built around the following users, scenarios and test conditions:
 
 - **Target Users:** Analysts, clerks and managers who delegate heavy document reading tasks (such as credit files, legal contracts, financial statements and administrative records) to an AI agent and are responsible for checking and approving the final result.
-- **Scenario A (Summarise a File and Spot Changes from Last Year):** The user asks the AI agent to summarise a client's file and flag anything that does not match last year's record, then checks the summary against the original documents to catch any mistakes.
-- **Scenario B (Approve or Reject the Draft with an Audit Trail):** The user checks, edits or rejects claims in the AI agent's draft before it is sent out, completing a clear sign-off step that records who decided what in an audit log.
 - **Prototype Conditions to Compare:**
   - **Condition A (Plain answer):** Shows only the AI summary as plain text with the client documents in tabs on the right, with no source links, highlights, confidence notes or claim-by-claim sign-off tools.
   - **Condition B (Answer with source links, highlights and a confidence note):** Shows the same AI summary with a numbered source link on each sentence. Clicking a sentence shows the passages the agent used, highlights the passage in the document viewer and shows the agent's confidence note, with no claim-by-claim approval, no sign-off gate and no audit record.
